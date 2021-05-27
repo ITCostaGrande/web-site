@@ -1,6 +1,7 @@
 <?php
 require "../vendor/autoload.php";
 
+use Controllers\BecasController;
 use MVC\Router;
 use Controllers\ConocenosController;
 use Controllers\OfertaController;
@@ -43,4 +44,8 @@ $router->get('/estudiantes/biblioteca_digital',[EstudiantesController::class,'bi
 $router->get('/estudiantes/act_extraescolares',[EstudiantesController::class,'extraescolares']);
 $router->get('/estudiantes/cisco',[EstudiantesController::class,'cisco']);
 $router->get('/estudiantes/encuestas',[EstudiantesController::class,'encuestas']);
+
+// Rutas de los aspirantes
+$router->get('/becas/',[BecasController::class,'resultados']);
+$router->get('/becas/resultados',[BecasController::class,'resultados']);
 $router->comprobarRutas();

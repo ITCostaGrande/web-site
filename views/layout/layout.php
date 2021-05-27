@@ -621,7 +621,7 @@
 							<a class="dropdown-item" href="#"> CNBES </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Resultados </a>
+							<a class="dropdown-item" href="/becas/resultados"> Resultados </a>
                         </li>
 					</ul>
                 </li>
