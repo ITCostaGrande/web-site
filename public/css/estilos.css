@@ -66,3 +66,25 @@
 .izquierda > ul > li > a:hover {
 	text-decoration: underline;
 }
+
+
+.menu_carreras{
+	margin-top: 50px;
+}
+.menu_carreras > ul{
+	/* text-align: center; */
+	list-style: none;
+}
+
+.menu_carreras > ul >li{
+	margin-top: 20px;
+}
+
+.menu_carreras > ul > li > a > h4{
+	font-size: 30px;
+}
+
+.menu_carreras > ul > li > a > h4:hover{
+	text-decoration: underline;
+	color: gray;
+}

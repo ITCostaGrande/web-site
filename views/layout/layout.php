@@ -618,7 +618,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> CNBES </a>
+							<a class="dropdown-item" href="http://www.cnbes.sep.gob.mx/"> CNBES </a>
                         </li>
 						<li class="nav-item dropdown">
 							<a class="dropdown-item" href="/becas/resultados"> Resultados </a>
@@ -632,16 +632,16 @@
                     </a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Fichas </a>
+							<a class="dropdown-item" href="/aspirantes/fichas"> Fichas </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Lista de aceptados </a>
+							<a class="dropdown-item" href="../archivos/Lista_aspirtantes_ACEPTADOS.pdf"> Lista de aceptados </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Inscripciones </a>
+							<a class="dropdown-item" href="../archivos/escolares/requisitosdeinscripcion.pdf"> Inscripciones </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Formatos </a>
+							<a class="dropdown-item" href="/aspirantes/formatos"> Formatos </a>
                         </li>
 					</ul>
                 </li>

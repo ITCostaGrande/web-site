@@ -30,6 +30,13 @@ $router->get('/conocenos/normateca',[ConocenosController::class,'normateca']);
 $router->get('/oferta/',[OfertaController::class,'presencial']);
 $router->get('/oferta/presencial',[OfertaController::class,'presencial']);
 $router->get('/oferta/distancia',[OfertaController::class,'distancia']);
+$router->get('/oferta/arquitectura',[OfertaController::class,'arquitectura']);
+$router->get('/oferta/cp',[OfertaController::class,'cp']);
+$router->get('/oferta/admon',[OfertaController::class,'admon']);
+$router->get('/oferta/tics',[OfertaController::class,'tics']);
+$router->get('/oferta/isc',[OfertaController::class,'isc']);
+$router->get('/oferta/electromecanica',[OfertaController::class,'electromecanica']);
+$router->get('/oferta/ige',[OfertaController::class,'ige']);
 
 //Rutas para la carpeta estudiantes
 $router->get('/estudiantes/',[EstudiantesController::class,'reinscripcion']);
