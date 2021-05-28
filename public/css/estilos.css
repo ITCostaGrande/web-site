@@ -49,7 +49,20 @@
 /* Estilos para centrar */
 .centrado{
 	text-align: center;
+	margin-top: 20px;
 }
 .info{
 	margin: 20px;
+}
+
+.izquierda{
+	text-align: left;
+}
+
+.izquierda > ul > li{
+	margin: 15px;
+}
+
+.izquierda > ul > li > a:hover {
+	text-decoration: underline;
 }

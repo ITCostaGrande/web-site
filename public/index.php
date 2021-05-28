@@ -1,11 +1,13 @@
 <?php
 require "../vendor/autoload.php";
 
-use Controllers\BecasController;
+
 use MVC\Router;
 use Controllers\ConocenosController;
 use Controllers\OfertaController;
 use Controllers\EstudiantesController;
+use Controllers\AspirantesController;
+use Controllers\BecasController;
 //referencia al objeto router
 $router = new Router;
 
@@ -48,4 +50,11 @@ $router->get('/estudiantes/encuestas',[EstudiantesController::class,'encuestas']
 // Rutas de los aspirantes
 $router->get('/becas/',[BecasController::class,'resultados']);
 $router->get('/becas/resultados',[BecasController::class,'resultados']);
+
+// Rutas para los aspirantes
+$router->get('/aspirantes/',[AspirantesController::class,'fichas']);
+$router->get('/aspirantes/fichas',[AspirantesController::class,'fichas']);
+$router->get('/aspirantes/formatos',[AspirantesController::class,'formatos']);
+
+
 $router->comprobarRutas();
