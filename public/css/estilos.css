@@ -119,4 +119,26 @@
 
 }
 
+.menu_materias{
+	text-align: left;
+	min-height: max-content;	
+}
+.cuerpo{
+	display: flex;
+	max-width: 50%;
+	min-height:max-content;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.reticula{
+	text-align: left;
+	padding:20px;
+}
+
+.descripcion_carrera{
+	max-height: min-content;
+	display: block;
+}
+
 
