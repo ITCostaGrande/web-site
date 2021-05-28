@@ -146,7 +146,6 @@
 
             </td>
             <!------------------- FINALIZA LA TABLA DE ASIGNATURAS ---------------->
-            <td width="10" valign="top"><img src="img/lineavertical.png" alt="" width="10" height="1000"> </td>
 
             <!---COLUMNAS DE PERFILIL Y RETICULAS ---->
             <td width="415" valign="top" align="justify">
