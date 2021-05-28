@@ -6,13 +6,13 @@
 
         <div class="menu_carreras">
             <ul>
-                <li><a href=""><h4>ARQUITECTURA</h4></a></li>
-                <li><a href=""><h4>CONTADOR PÚBLICO</h4></a></li>
-                <li><a href=""><h4>LICENCIATURA EN ADMINISTRACIÓN</h4></a></li>
-                <li><a href=""><h4>INGENIERÍA EN TIC'S</h4></a></li>
-                <li><a href=""><h4>INGENIERÍA EN GESTIÓN EMPRESARIAL</h4></a></li>
-                <li><a href=""><h4>INGENIERÍA EN SISTEMAS COMPUTACIONALES</h4></a></li>
-                <li><a href=""><h4>INGENIERÍA ELECTROMECÁNICA</h4></a></li>
+                <li><a href="/oferta/arquitectura"><h4>ARQUITECTURA</h4></a></li>
+                <li><a href="/oferta/cp"><h4>CONTADOR PÚBLICO</h4></a></li>
+                <li><a href="/oferta/admon"><h4>LICENCIATURA EN ADMINISTRACIÓN</h4></a></li>
+                <li><a href="/oferta/tics"><h4>INGENIERÍA EN TIC'S</h4></a></li>
+                <li><a href="/oferta/isc"><h4>INGENIERÍA EN GESTIÓN EMPRESARIAL</h4></a></li>
+                <li><a href="/oferta/electromecanica"><h4>INGENIERÍA EN SISTEMAS COMPUTACIONALES</h4></a></li>
+                <li><a href="/oferta/ige"><h4>INGENIERÍA ELECTROMECÁNICA</h4></a></li>
             </ul>
         </div>
     </div>
