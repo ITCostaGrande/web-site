@@ -592,10 +592,10 @@
 							<a class="dropdown-item" href="/estudiantes/buzon"> Buzon de observ. y sug. </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="/estudiantes/lineamientos"> Manual de lineamientos </a>
+							<a class="dropdown-item" href="../archivos/Normatividad/Manual_de_Lineamientos_TecNM.pdf"> Manual de lineamientos </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="/estudiantes/reglamentos"> Reglamento de alumnos </a>
+							<a class="dropdown-item" href="../archivos/Normatividad/reglamento_alumnos.pdf"> Reglamento de alumnos </a>
                         </li>
 						<li class="nav-item dropdown">
 							<a class="dropdown-item" href="/estudiantes/biblioteca_digital"> Biblioteca digital </a>
