@@ -583,7 +583,7 @@
 							<a class="dropdown-item" href="/estudiantes/titulacion"> Titulación </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="/estudiantes/egresados"> Egresados </a>
+							<a class="dropdown-item" href="https://www.facebook.com/people/ITcostagrande-Egresados-Egresadas/100009172500207/"> Egresados </a>
                         </li>
 						<li class="nav-item dropdown">
 							<a class="dropdown-item" href="/estudiantes/bolsa"> Bolsa de trabajo </a>
