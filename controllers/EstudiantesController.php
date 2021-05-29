@@ -57,4 +57,7 @@ class EstudiantesController{
     public static function encuestas(Router $router){
         $router->render('/estudiantes/encuestas');
     }
+    public static function residencias(Router $router){
+        $router->render('/estudiantes/residencias');
+    }
 }

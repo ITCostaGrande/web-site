@@ -157,3 +157,11 @@
 	margin: auto;
 	text-align: justify;
 }
+
+iframe{
+	margin-bottom: 15px;
+}
+
+.residencias{
+	padding: 10px;
+}

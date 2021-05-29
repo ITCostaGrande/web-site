@@ -38,6 +38,7 @@ $router->get('/oferta/isc',[OfertaController::class,'isc']);
 $router->get('/oferta/electromecanica',[OfertaController::class,'electromecanica']);
 $router->get('/oferta/ige',[OfertaController::class,'ige']);
 
+
 //Rutas para la carpeta estudiantes
 $router->get('/estudiantes/',[EstudiantesController::class,'reinscripcion']);
 $router->get('/estudiantes/reinscripcion',[EstudiantesController::class,'reinscripcion']);
@@ -53,6 +54,7 @@ $router->get('/estudiantes/biblioteca_digital',[EstudiantesController::class,'bi
 $router->get('/estudiantes/act_extraescolares',[EstudiantesController::class,'extraescolares']);
 $router->get('/estudiantes/cisco',[EstudiantesController::class,'cisco']);
 $router->get('/estudiantes/encuestas',[EstudiantesController::class,'encuestas']);
+$router->get('/estudiantes/residencias',[EstudiantesController::class,'residencias']);
 
 // Rutas de los aspirantes
 $router->get('/becas/',[BecasController::class,'resultados']);

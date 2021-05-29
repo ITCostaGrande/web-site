@@ -580,6 +580,9 @@
 							<a class="dropdown-item" href="/estudiantes/servicio_social"> Servicio social </a>
                         </li>
 						<li class="nav-item dropdown">
+							<a class="dropdown-item" href="/estudiantes/residencias"> Residencias </a>
+                        </li>
+						<li class="nav-item dropdown">
 							<a class="dropdown-item" href="/estudiantes/titulacion"> Titulación </a>
                         </li>
 						<li class="nav-item dropdown">
@@ -607,7 +610,7 @@
 							<a class="dropdown-item" href="/estudiantes/cisco"> Cisco Networking Academy ITCG </a>
                         </li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="encuestas"> Encuestas </a>
+							<a class="dropdown-item" href="https://www.itcostagrande.edu.mx/menu_sse/login.php"> Encuestas </a>
                         </li>
 					</ul>
                 </li>
