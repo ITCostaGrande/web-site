@@ -9,7 +9,7 @@
             <a1 href="left">Ingeniería en Gestión Empresarial en Línea</a1>
         </h3>
         <a href="../archivos/FOLLETO IGE MODALIDAD EN LÍNEA 2020.pdf"><img src="../img/muchas/Portada IGE_Distancia.jpg"></a>
-        <p><a href="ige.php">
+        <p><a href="/oferta/ige">
     </div>
     <br>
     <h4>
