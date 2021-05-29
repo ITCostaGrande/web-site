@@ -14,11 +14,12 @@
     <!---COLUMNAS DE ASIGNATURAS ---->
 
     <!------- Tabla principal ------>
-    <table width="680" border="0" cellspacing="0" cellpadding="0" align="center">
-        <tr>
+    <div class="col-xs-12 centrado">
+        <div class="centrado cuerpo">
             <!---COLUMNAS DE ASIGNATURAS ---->
 
-            <td width="250"> <a href="#" class="itlcuerpo"> Asignaturas:&nbsp;</a>
+            <div class="menu_materias">
+                <a href="#" class="itlcuerpo"> Asignaturas:&nbsp;</a>
                 <br>
                 <a href="#" class="titulonota">Semestre 1: </a> <br>
                 <a href="../Programas/Lic en Administracion LADM - 2010 -234/Asignaturas/LAC-1035 Teoria General de la Administracion_OK_2016.pdf" target="_blank">Teoria General de la Administracion</a> <br>
@@ -88,12 +89,12 @@
                 <a href="../Programas/Lic en Administracion LADM - 2010 -234/Asignaturas/LAD-1018 Formulacion y Evaluacion de Proyectos_OK_2016.pdf" target="_blank">Formulacion y Evaluacion de Proyectos</a> <br>
                 <a href="../Programas/Lic en Administracion LADM - 2010 -234/Asignaturas/LAD-1011 Desarrollo Organizacional" target="_blank">Desarrollo Organizacional</a>
 
-            </td>
+            </div>
 
             <!------------------- FINALIZA LA TABLA DE ASIGNATURAS ---------------->
 
             <!---COLUMNAS DE PERFILIL Y RETICULAS ---->
-            <td width="415" valign="top" align="justify">
+            <div class="descripcion_carrera">
                 <div class="b_lateral">
                     <p class="itlcuerpo"><a href="../Programas/Lic en Administracion LADM - 2010 -234/Perfil-Objetivo Licenciatura en Administracion.pdf" target="_blank">Objetivo General</a></p>
                     <br>
@@ -170,15 +171,16 @@
                         • Aplicar conocimientos, habilidades y actitudes proactivas para la toma de decisiones. <br>
                     </span>
                 </div>
-                <br><br>
-                <p class="itlcuerpo"> <a href="../Programas/Lic en Administracion LADM - 2010 -234/Reticula Admon.pdf" target="_blank">Retícula</a></p>
-                <br><br>
-                <p class="itlcuerpo"> <a href="../Programas/Lic en Administracion LADM - 2010 -234/Reticula Administracion esp.pdf" target="_blank">ESPECIALIDAD</a></p>
                 <br>
-                <span class="nota">
-                    Mercadotecnia (LADE-MER-2018-01)</span>
-
-            </td>
-        </tr>
-    </table>
+                <div class="reticula">
+                    <p class="itlcuerpo"> <a href="../Programas/Lic en Administracion LADM - 2010 -234/Reticula Admon.pdf" target="_blank">Retícula</a></p>
+                    <br><br>
+                    <p class="itlcuerpo"> <a href="../Programas/Lic en Administracion LADM - 2010 -234/Reticula Administracion esp.pdf" target="_blank">ESPECIALIDAD</a></p>
+                    <br>
+                    <span class="nota">
+                        Mercadotecnia (LADE-MER-2018-01)</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

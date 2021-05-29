@@ -11,7 +11,7 @@
     <div class="centrado cuerpo">
         <!---COLUMNAS DE ASIGNATURAS ---->
         <div class="menu_materias">
-            <a href="#" class="itlcuerpo"> Asignaturas:&nbsp;</a>
+            <a href="#" class="itlcuerpo"> Asignaturas:&nbsp;</a><br>
             <!---  <div class="cintillo"></div> --->
             <!-------------Semestre 1 ----------------------------------->
             <a href="#" class="titulonota">Semestre 1: </a>
