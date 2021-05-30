@@ -22,7 +22,7 @@
             </div>
     
         <div class='display-5 text-center my-0 py-1' align='center' style="font-family: arial; font-size:13pt">
-            <p> <a href="educacion_presencial.html">
+            <p> <a href="/oferta/presencial">
                 Presencial
             </p> 
         </div>
