@@ -525,7 +525,7 @@
 							</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="/conocenos/organigrama"> 
+							<a class="dropdown-item" href="../archivos/organigrama.pdf"> 
 								Organigrama institucional 
 							</a>
 						</li>

@@ -50,6 +50,7 @@
 .centrado{
 	text-align: center;
 	margin-top: 20px;
+	margin-left: 20px;
 }
 .info{
 	margin: 20px;
@@ -165,3 +166,4 @@ iframe{
 .residencias{
 	padding: 10px;
 }
+

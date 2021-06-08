@@ -1,9 +1,10 @@
-<div class="col-xs-12 centrado">
-    <div>
-    <h2>Mensaje del director</h2>
-    <br>
-    <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae veniam alias debitis maiores. Sed asperiores deserunt blanditiis dignissimos nisi saepe optio, ipsum dicta voluptates officia necessitatibus fuga esse officiis!</p>
+<div class=" Estilo4 centrado col-xs-12">
 
+    <div align="center">
+        <h2>Mensaje de la directora</h2>
+        <hr class="divisor">
+        <br>
+
+        <img src="../img/muchas/MensajeDirector.jpg" width="651" height="109">
     </div>
-
 </div>
