@@ -10,6 +10,10 @@ class Router{
     public function get($url,$fn){
         $this->rutasGET[$url] =$fn;
     }
+    public function post($url,$fn){
+        $this->rutasPOST[$url] =$fn;
+    }
+
     
     
     
@@ -20,6 +24,8 @@ class Router{
 
         if($metodo === 'GET'){
             $fn= $this->rutasGET[$urlAcutal] ?? null;
+        }else{
+            $fn= $this->rutasPOST[$urlAcutal] ?? null;
         }
         
         if($fn){

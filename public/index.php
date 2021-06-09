@@ -70,4 +70,9 @@ $router->get('/aspirantes/formatos',[AspirantesController::class,'formatos']);
 
 // Rutas para los usuarios
 $router->get('/usuarios/mostrar',[UsuariosController::class,'mostrar']);
+$router->get('/usuarios/panel',[UsuariosController::class,'panel']);
+$router->get('/usuarios/login',[UsuariosController::class,'login']);
+$router->post('/usuarios/login',[UsuariosController::class,'login']);
+
+
 $router->comprobarRutas();

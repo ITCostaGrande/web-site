@@ -78,9 +78,8 @@ class Usuarios{
             $stmt =  $conn->prepare("SELECT * FROM tbusuarios;");
             $stmt->execute();
             $resultado = $stmt->get_result();
-            $fetch = $resultado->fetch_assoc();
-            if($fetch){
-                return $fetch;
+            if($resultado){
+                return $resultado;
             }else{
                 return false;
             }
