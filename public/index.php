@@ -8,6 +8,9 @@ use Controllers\OfertaController;
 use Controllers\EstudiantesController;
 use Controllers\AspirantesController;
 use Controllers\BecasController;
+use Controllers\UsuariosController;
+use Model\Usuarios;
+
 //referencia al objeto router
 $router = new Router;
 
@@ -65,5 +68,6 @@ $router->get('/aspirantes/',[AspirantesController::class,'fichas']);
 $router->get('/aspirantes/fichas',[AspirantesController::class,'fichas']);
 $router->get('/aspirantes/formatos',[AspirantesController::class,'formatos']);
 
-
+// Rutas para los usuarios
+$router->get('/usuarios/mostrar',[UsuariosController::class,'mostrar']);
 $router->comprobarRutas();

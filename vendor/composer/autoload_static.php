@@ -12,6 +12,10 @@ class ComposerStaticInitbc27dff9b6b207ecbc74c0867ca4e0c4
             'Model\\' => 6,
             'MVC\\' => 4,
         ),
+        'D' => 
+        array (
+            'Database\\' => 9,
+        ),
         'C' => 
         array (
             'Controllers\\' => 12,
@@ -26,6 +30,10 @@ class ComposerStaticInitbc27dff9b6b207ecbc74c0867ca4e0c4
         'MVC\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
+        ),
+        'Database\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
         ),
         'Controllers\\' => 
         array (
