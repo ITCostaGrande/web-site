@@ -150,6 +150,25 @@ class Usuarios{
         $conn->close();
     }
 
+    public function updateUser(){
+        try{
+            $conn = conectar();
+            $stmt = $conn->prepare('UPDATE tbusuarios set login = ?, nombre = ?, apaterno = ?, amaterno = ?, password = ?, email = ?, nivel = ? WHERE IdUsuario = ?');
+            $stmt->bind_param('sssssssi',$this->login,$this->nombre, $this->paterno, $this->materno, $this->pass,$this->email,$this->nivel,$this->id);
+            $stmt->execute();
+            if($stmt->affected_rows > 0 ){
+                return true;
+            }else{
+                return false;
+            }
+
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+
+        $conn->close();
+    }
+
 
 
 }

@@ -22,6 +22,8 @@
                     echo "<b><p>Subdirección</b></p>";
                 }else if ($nivel == "Comunicacion") {
                     echo "<b><p>Comunicación</b></p>";
+                }else if($nivel == 'Recursos Humanos'){
+                    echo '<b><p>Recursos Humanos</p></b>';
                 } else {
                     echo "<b><p>Estudiante</b></p>";
                 }

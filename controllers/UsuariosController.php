@@ -78,4 +78,34 @@ class UsuariosController
 
         $router->render('/usuarios/agregar');
     }
+
+    public static function modificar(Router $router){
+        
+        $id = $_GET['recordID'];
+        if(!filter_var($id, FILTER_VALIDATE_INT) && $_SERVER['REQUEST_METHOD'] === 'GET'){
+            header('Location:/usuarios/mostrar');
+        }else{
+            $user = new Usuarios();
+            $user->setId($id);
+            $prop = $user->showPropiertesUser();
+        }
+
+        if($_SERVER['REQUEST_METHOD'] === 'POST')  {
+            $user->setLogin($_POST['login']);
+            $user->setNombre($_POST['Nombre']);
+            $user->setPaterno($_POST['apaterno']);
+            $user->setMaterno($_POST['amaterno']);
+            $user->setPass($_POST['password']);
+            $user->setEmail($_POST['email']);
+            $user->setNivel($_POST['nivel']);
+
+            if($user->updateUser()){
+                header('Location: /usuarios/mostrar');
+            }
+
+        }
+
+
+        $router->render('/usuarios/modificar',['row_Recordset1' => $prop]);
+    }
 }

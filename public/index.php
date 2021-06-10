@@ -76,7 +76,8 @@ $router->post('/usuarios/login',[UsuariosController::class,'login']);
 $router->get('/usuarios/logout',[UsuariosController::class,'logout']);
 $router->get('/usuarios/agregar',[UsuariosController::class,'agregar']);
 $router->post('/usuarios/agregar',[UsuariosController::class,'agregar']);
-
+$router->get('/usuarios/modificar',[UsuariosController::class,'modificar']);
+$router->post('/usuarios/modificar',[UsuariosController::class,'modificar']);
 
 
 
