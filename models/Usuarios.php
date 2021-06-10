@@ -70,9 +70,32 @@ class Usuarios{
     public function getLogin(){
         return $this->login;
     }
+
+    public function login(){
+        try{
+            $conn = conectar();
+            $stmt= $conn->prepare('SELECT IdUsuario from tbusuarios where login = ? and password = ?');
+            $stmt->bind_param('ss',$this->login,$this->pass);
+            $stmt->execute();
+            $res = $stmt->get_result();
+            $fetch = $res->fetch_assoc();
+            if($fetch){
+                session_start();
+                $_SESSION['id'] = $fetch['IdUsuario'];
+                return true;
+
+            }else{
+                return false;
+            }
+
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+        $conn->close();
+    }
     
     
-    public function showPropiertes(){
+    public function showPropiertesAllUsers(){
         try{
             $conn = conectar();
             $stmt =  $conn->prepare("SELECT * FROM tbusuarios;");
@@ -86,7 +109,47 @@ class Usuarios{
         }catch(Exception $e){
             echo $e->getMessage();
         }
+        $conn->close();
     }
+
+    public function showPropiertesUser(){
+        try{
+            $conn = conectar();
+            $stmt =  $conn->prepare("SELECT * FROM tbusuarios where IdUsuario = ?;");
+            $stmt->bind_param('i',$this->id);
+            $stmt->execute();
+            $resultado = $stmt->get_result();
+            $fetch = $resultado->fetch_assoc();
+            if($resultado){
+                return $fetch;
+            }else{
+                return false;
+            }
+        }catch(Exception $e){
+            echo $e->getMessage();
+        }
+        $conn->close();
+    }
+
+    public function createUser(){
+        try{
+            $conn = conectar();
+            $stmt = $conn->prepare('INSERT INTO tbusuarios (login, nombre, apaterno, amaterno, password, email, nivel) VALUES (?,?,?,?,?,?,?)');
+            $stmt->bind_param('sssssss',$this->login,$this->nombre, $this->paterno, $this->materno, $this->pass,$this->email,$this->nivel);
+            $stmt->execute();
+            if($stmt->affected_rows > 0 ){
+                return true;
+            }else{
+                return false;
+            }
+
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+
+        $conn->close();
+    }
+
 
 
 }

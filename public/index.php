@@ -73,6 +73,12 @@ $router->get('/usuarios/mostrar',[UsuariosController::class,'mostrar']);
 $router->get('/usuarios/panel',[UsuariosController::class,'panel']);
 $router->get('/usuarios/login',[UsuariosController::class,'login']);
 $router->post('/usuarios/login',[UsuariosController::class,'login']);
+$router->get('/usuarios/logout',[UsuariosController::class,'logout']);
+$router->get('/usuarios/agregar',[UsuariosController::class,'agregar']);
+$router->post('/usuarios/agregar',[UsuariosController::class,'agregar']);
+
+
+
 
 
 $router->comprobarRutas();
