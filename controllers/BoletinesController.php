@@ -4,6 +4,7 @@ namespace Controllers;
 
 use MVC\Router;
 use Model\Boletines;
+include '../config/funciones.php';
 class BoletinesController{
 
     public static function  mostrar(Router $router){
@@ -13,8 +14,13 @@ class BoletinesController{
         $router->render('/boletines/mostrar',['propiedades' => $prop]);
     }
     public static function propiedades(Router $router){
-
-        $router->render('/boletines/propiedades');
+        $id = $_GET['recordID'];
+        if(verificarGET($id,'/boletines/mostrar')){
+            $boletin = new Boletines();
+            $boletin->setId($id);
+            $prop = $boletin->showPropiertiesOneBoletin();
+        }
+        $router->render('/boletines/propiedades',['row_Recordset' => $prop]);
     }
 
     public static function  agregar(Router $router){

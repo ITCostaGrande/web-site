@@ -101,4 +101,23 @@ class Boletines{
         }
         $conn->close();
     }
+
+    public function showPropiertiesOneBoletin(){
+        try{
+            $conn = conectar();
+            $stmt = $conn->prepare('SELECT * FROM tbboletin WHERE Id = ?;');
+            $stmt->bind_param('i',$this->id);
+            $stmt->execute();
+            $res = $stmt->get_result();
+            $fetch = $res->fetch_assoc();
+            if($fetch){
+                return $fetch;
+            }else{
+                return false;
+            }
+
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+    }
 }

@@ -4,7 +4,7 @@ namespace Controllers;
 
 use MVC\Router;
 use Model\Usuarios;
-
+include '../config/funciones.php';
 class UsuariosController
 {
 
@@ -82,9 +82,7 @@ class UsuariosController
     public static function modificar(Router $router){
         
         $id = $_GET['recordID'];
-        if(!filter_var($id, FILTER_VALIDATE_INT) && $_SERVER['REQUEST_METHOD'] === 'GET'){
-            header('Location:/usuarios/mostrar');
-        }else{
+        if(verificarGET($id,'/usuarios/mostrar')){
             $user = new Usuarios();
             $user->setId($id);
             $prop = $user->showPropiertesUser();

@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
 
-	<meta charset="UTF-8">
+	<meta charset="UTF-es">
 	<title>TecNM | Campus ITCostaGrande</title>
 	<meta name="author" content="TecNM/ITCG">
 	<meta name="description" content="Página del Campus ITCostaGrande">
