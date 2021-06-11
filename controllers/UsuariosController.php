@@ -108,4 +108,16 @@ class UsuariosController
 
         $router->render('/usuarios/modificar',['row_Recordset1' => $prop]);
     }
+
+    public static function eliminar(Router $router){
+        $id = $_GET['recordID'];
+        if(!filter_var($id, FILTER_VALIDATE_INT) && $_SERVER['REQUEST_METHOD'] === 'GET'){
+            header('Location:/usuarios/mostrar');
+        }else{
+            $user = new Usuarios();
+            $user->setId($id);
+            $user->deleteUser();
+            header('Location:/usuarios/mostrar');
+        }
+    }
 }

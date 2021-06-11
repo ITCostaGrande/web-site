@@ -29,7 +29,7 @@
                     <div align="center"><a href="/usuarios/modificar?recordID=<?php echo $prop['IdUsuario']; ?>"><img src="../img_menu/editar.png" width="47" height="48" /></a></div>
                 </td>
                 <td>
-                    <div align="center"><a href="eliminar_usuario.php?recordID=<?php echo $prop['IdUsuario']; ?>" onclick="if(confirm('�Realmente deseas eliminarlo?')==false){return false;}"><img src="../img_menu/eliminar.gif" width="30" height="30" border="0" /></a></div>
+                    <div align="center"><a href="/usuarios/eliminar?recordID=<?php echo $prop['IdUsuario']; ?>" onclick="if(confirm('¿Realmente deseas eliminarlo?')==false){return false;}"><img src="../img_menu/eliminar.gif" width="30" height="30" border="0" /></a></div>
                 </td>
             </tr>
         <?php } ?>

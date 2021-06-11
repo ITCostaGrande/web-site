@@ -47,7 +47,7 @@
             </td>
             <td>
                 <div align="center">
-                    <p><a href="../consulta_boletin.php"><img src="../img_menu/boletin.jpg" alt="catalogos" width="212" height="166" border="0" /></a></p>
+                    <p><a href="/boletines/mostrar"><img src="../img_menu/boletin.jpg" alt="catalogos" width="212" height="166" border="0" /></a></p>
                     <p align="center" class="Estilo2">Boletines</p>
                 </div>
             </td>

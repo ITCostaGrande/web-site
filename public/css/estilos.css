@@ -168,3 +168,9 @@ iframe{
 	padding: 10px;
 }
 
+#boletines{
+	table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #1B396A ;
+}

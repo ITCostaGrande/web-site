@@ -169,6 +169,24 @@ class Usuarios{
         $conn->close();
     }
 
+    public function deleteUser(){
+        try{
+            $conn = conectar();
+            $stmt = $conn->prepare('DELETE FROM tbusuarios WHERE IdUsuario = ?');
+            $stmt->bind_param('i',$this->id);
+            $stmt->execute();
+            if($stmt->affected_rows > 0){
+                return true;
+            }else{
+                return false;
+            }
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+
+        $conn->close();
+    }
+
 
 
 }

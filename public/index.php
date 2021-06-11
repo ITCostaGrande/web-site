@@ -9,8 +9,7 @@ use Controllers\EstudiantesController;
 use Controllers\AspirantesController;
 use Controllers\BecasController;
 use Controllers\UsuariosController;
-use Model\Usuarios;
-
+use Controllers\BoletinesController;
 //referencia al objeto router
 $router = new Router;
 
@@ -78,7 +77,16 @@ $router->get('/usuarios/agregar',[UsuariosController::class,'agregar']);
 $router->post('/usuarios/agregar',[UsuariosController::class,'agregar']);
 $router->get('/usuarios/modificar',[UsuariosController::class,'modificar']);
 $router->post('/usuarios/modificar',[UsuariosController::class,'modificar']);
+$router->get('/usuarios/eliminar',[UsuariosController::class,'eliminar']);
 
+// Rutas para los boletines
+$router->get('/boletines/mostrar',[BoletinesController::class,'mostrar']);
+$router->get('/boletines/agregar',[BoletinesController::class,'agregar']);
+$router->post('/boletines/agregar',[BoletinesController::class,'agregar']);
+$router->get('/boletines/modificar',[BoletinesController::class,'modificar']);
+$router->post('/boletines/modificar',[BoletinesController::class,'modificar']);
+$router->get('/boletines/eliminar',[BoletinesController::class,'eliminar']);
+$router->get('/boletines/propiedades',[BoletinesController::class,'propiedades']);
 
 
 
