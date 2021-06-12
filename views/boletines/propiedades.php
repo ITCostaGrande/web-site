@@ -22,12 +22,12 @@
         </tr>
         <tr>
             <td>
-                <p class="Estilo22" align="center">Descripci�n Breve: <span class="Estilo1"><?php echo $row_Recordset['DescBreve']; ?>&nbsp;</span>
+                <p class="Estilo22" align="center">Descripción Breve: <span class="Estilo1"><?php echo $row_Recordset['DescBreve']; ?>&nbsp;</span>
             </td>
         </tr>
         <tr>
             <td>
-                <p class="Estilo22" align="center">Descripci�n Completa: <span class="Estilo1"><?php echo $row_Recordset['DescCompleta']; ?>&nbsp;</span>
+                <p class="Estilo22" align="center">Descripción Completa: <span class="Estilo1"><?php echo $row_Recordset['DescCompleta']; ?>&nbsp;</span>
             </td>
         </tr>
         <tr>

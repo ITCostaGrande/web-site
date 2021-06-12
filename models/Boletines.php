@@ -100,6 +100,7 @@ class Boletines{
             $e->getMessage();
         }
         $conn->close();
+        $stmt->close();
     }
 
     public function showPropiertiesOneBoletin(){
@@ -119,6 +120,8 @@ class Boletines{
         }catch(Exception $e){
             $e->getMessage();
         }
+        $conn->close();
+        $stmt->close();
     }
 
     public function createBoletin(){
@@ -137,5 +140,29 @@ class Boletines{
             $e->getMessage();
         }
 
+        $conn->close();
+        $stmt->close();
+    }
+
+    public function deleteBoletin(){
+        try{
+            $conn = conectar();
+
+            $stmt = $conn->prepare('DELETE FROM tbboletin where Id = ?;');
+            $stmt->bind_param('i',$this->id);
+            $stmt->execute();
+            if($stmt->affected_rows > 0){
+                return true;
+            }else{
+                return false;
+            }
+
+        }catch(Exception $e){
+            $e->getMessage();
+
+        }
+        
+        $conn->close();
+        $stmt->close();
     }
 }
