@@ -120,4 +120,22 @@ class Boletines{
             $e->getMessage();
         }
     }
+
+    public function createBoletin(){
+
+        try{
+            $conn = conectar();
+            $stmt  = $conn->prepare('INSERT INTO tbboletin (Nboletin, Foto1,Foto2,Titulo,DescBreve,DescCompleta,FIngreso,FFinal) VALUES (?,?,?,?,?,?,?,?);');
+            $stmt->bind_param('ssssssss',$this->n_boletin,$this->foto1,$this->foto2,$this->titulo,$this->desc_breve,$this->desc_completa,$this->fecha_i,$this->fecha_f);
+            $stmt->execute();
+            if($stmt->affected_rows > 0){
+                return true;
+            }else{
+                return false;
+            }
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+
+    }
 }

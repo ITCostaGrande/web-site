@@ -24,7 +24,31 @@ class BoletinesController{
     }
 
     public static function  agregar(Router $router){
-        
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $boletin = new Boletines();
+            $boletin->setNBoletin($_POST['no']);
+            $boletin->setTitulo($_POST['titulo']);
+            $boletin->setDescCompleta($_POST['desc-completa']);
+            $boletin->setDescBreve($_POST['desc-breve']);
+            $boletin->setFechaInicio(date('Y-m-d'));
+            $boletin->setFechaFinal($_POST['final']);
+            $boletin->setFoto1($_FILES['foto1']['name']);
+            $boletin->setFoto2($_FILES['foto2']['name']);
+            
+            $carpeta = '../public/boletines_save/';
+            
+            //mover la imagen
+            move_uploaded_file($_FILES['foto1']['tmp_name'],$carpeta . $_FILES['foto1']['name']);
+            move_uploaded_file($_FILES['foto2']['tmp_name'],$carpeta . $_FILES['foto2']['name']);
+
+           
+            if($boletin->createBoletin()){
+                header('Location:/boletines/mostrar');
+
+            }else{
+                echo '<p> Existe algun error</p>';
+            }
+        }
 
         $router->render('/boletines/agregar');
     }

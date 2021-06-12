@@ -2,7 +2,9 @@
     <h2>Todos los Boletines</h2>
     <hr class="divisor">
     <br>
-
+    <a href="/boletines/agregar">Agregar boletin</a>
+    <br>
+    <a href="/usuarios/panel">Regresar al Panel de Control</a>
     <table width="934" border="1" align="center" cellpadding="0" cellspacing="0">
         <tr bgcolor="#0099CC">
             <td width="30" rowspan="2">
