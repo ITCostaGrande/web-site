@@ -165,4 +165,26 @@ class Boletines{
         $conn->close();
         $stmt->close();
     }
+
+    public function updateBoletin(){
+        try{
+            $conn = conectar();
+
+            $stmt = $conn->prepare('UPDATE tbboletin SET Nboletin=?, Foto1=?, Foto2=?, Titulo=?, DescBreve=?, DescCompleta=?, FFinal=?   WHERE Id=?;');
+            $stmt->bind_param('sssssssi',$this->n_boletin,$this->foto1,$this->foto2,$this->titulo,$this->desc_breve,$this->desc_completa,$this->fecha_f,$this->id);
+            $stmt->execute();
+            if($stmt->affected_rows > 0){
+                return true;
+            }else{
+                return false;
+            }
+
+        }catch(Exception $e){
+            $e->getMessage();
+
+        }
+        
+        $conn->close();
+        $stmt->close();
+    }
 }
