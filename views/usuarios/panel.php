@@ -55,7 +55,7 @@
         <tr>
             <td>
                 <div align="center">
-                    <p><a href="../consulta_sliders.php"><img src="../img_menu/slider.jpg" width="280" height="166" border="0" /></a></p>
+                    <p><a href="/sliders/mostrar"><img src="../img_menu/slider.jpg" width="280" height="166" border="0" /></a></p>
                     <p><span class="Estilo2">Sliders</span></p>
                 </div>
             </td>

@@ -10,6 +10,7 @@ use Controllers\AspirantesController;
 use Controllers\BecasController;
 use Controllers\UsuariosController;
 use Controllers\BoletinesController;
+use Controllers\SlidersController;
 //referencia al objeto router
 $router = new Router;
 
@@ -87,6 +88,15 @@ $router->get('/boletines/modificar',[BoletinesController::class,'modificar']);
 $router->post('/boletines/modificar',[BoletinesController::class,'modificar']);
 $router->get('/boletines/eliminar',[BoletinesController::class,'eliminar']);
 $router->get('/boletines/propiedades',[BoletinesController::class,'propiedades']);
+
+// Rutas para los sliders
+$router->get('/sliders/mostrar',[SlidersController::class,'mostrar']);
+$router->get('/sliders/agregar',[SlidersController::class,'agregar']);
+$router->post('/sliders/agregar',[SlidersController::class,'agregar']);
+$router->get('/sliders/modificar',[SlidersController::class,'modificar']);
+$router->post('/sliders/modificar',[SlidersController::class,'modificar']);
+$router->get('/sliders/eliminar',[SlidersController::class,'eliminar']);
+$router->get('/sliders/propiedades',[SlidersController::class,'propiedades']);
 
 
 
