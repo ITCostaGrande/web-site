@@ -15,7 +15,13 @@ class Sliders{
     private $fecha_i;
     private $fecha_f;
 
-    
+    public function setArchivo($archivo){
+        $this->Archivo = $archivo;
+    }
+
+    public function getArchivo(){
+        return $this->Archivo;
+    }
     public function setFechaFinal($fecha){
         $this->fecha_f = $fecha;
     }
@@ -159,12 +165,11 @@ class Sliders{
         $stmt->close();
     }
 
-    public function updateBoletin(){
+    public function updateSlider(){
         try{
             $conn = conectar();
-
-            $stmt = $conn->prepare('UPDATE tbboletin SET Nboletin=?, Foto1=?, Foto2=?, Titulo=?, DescBreve=?, DescCompleta=?, FFinal=?   WHERE Id=?;');
-            $stmt->bind_param('sssssssi',$this->n_boletin,$this->foto1,$this->foto2,$this->titulo,$this->desc_breve,$this->desc_completa,$this->fecha_f,$this->id);
+            $stmt = $conn->prepare('UPDATE tbsliders SET NSliders=?, Imagen=?, Archivo=?, Url=?, Titulo=?, FFinal=?, Estado = ?  WHERE Id=?;');
+            $stmt->bind_param('sssssssi',$this->NSliders,$this->imagen,$this->Archivo,$this->Url,$this->titulo,$this->fecha_f,$this->estado , $this->id);
             $stmt->execute();
             if($stmt->affected_rows > 0){
                 return true;

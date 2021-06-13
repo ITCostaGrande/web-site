@@ -2,6 +2,8 @@
     <h2>Detalles de los Sliders</h2>
     <hr class="divisor">
     <br>
+    <button type="button" class="btn btn-primary"><a href="/sliders/mostrar">Mostrar todos</a></button>
+    <button type="button" class="btn btn-primary"><a href="/usuarios/panel">Panel de control</a></button>
     <table width="200" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC">
         <tr>
             <td>
