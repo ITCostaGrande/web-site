@@ -1,12 +1,14 @@
 <?php
 
 namespace Controllers;
+
 use MVC\Router;
 use Model\Sliders;
 
 include '../config/funciones.php';
 
-class SlidersController{
+class SlidersController
+{
 
     public static function  mostrar(Router $router)
     {
@@ -29,15 +31,38 @@ class SlidersController{
 
     public static function  agregar(Router $router)
     {
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-           
-            $carpeta = '../public/boletines_save/';
+            //  echo '<pre>';
+            //  var_dump($_POST);
+            //  echo '</pre>';
+
+            //  echo '<pre>';
+            //  var_dump($_FILES);
+            //  echo '</pre>';
+            
+            $slider = new Sliders();
+            $slider->setNSlider($_POST['no']);
+            $slider->setTitulo($_POST['titulo']);
+            $slider->setFechaFinal($_POST['final']);
+            $slider->setFechaInicio(date('Y-m-d'));
+            $slider->setUrl($_POST['url']);
+            $slider->setEstado($_POST['estado']);
+            $slider->setImagen($_FILES['foto1']['name']);
+            $slider->setArchivo($_FILES['archivo']['name']);
+            $carpeta = '../public/sliders_save/';
 
             //mover la imagen
             move_uploaded_file($_FILES['foto1']['tmp_name'], $carpeta . $_FILES['foto1']['name']);
-            move_uploaded_file($_FILES['foto2']['tmp_name'], $carpeta . $_FILES['foto2']['name']);
-
-
+            if ($_FILES['archivo']['name']) {
+                move_uploaded_file($_FILES['archivo']['tmp_name'], $carpeta . $_FILES['archivo']['name']);
+            }
+             
+            if($slider->createSlider()){
+                header('Location:/sliders/mostrar');
+            }else{
+                echo '<p>Ocurrió un error !! </p>';
+            }
         }
 
         $router->render('/sliders/agregar');
@@ -52,17 +77,11 @@ class SlidersController{
             $prop = $slider->showPropiertiesOneSlider();
         }
 
-        if($_SERVER['REQUEST_METHOD']==='POST'){
-            //  echo '<pre>';
-            //  var_dump($_POST);
-            //  echo '</pre>';
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            //  echo '<pre>';
-            //  var_dump($_FILES);
-            //  echo '</pre>';
 
             $carpeta = '../public/sliders_save/';
-           
+
             $slider->setNSlider($_POST['no']);
             $slider->setUrl($_POST['url']);
             $slider->setTitulo($_POST['titulo']);
@@ -78,7 +97,7 @@ class SlidersController{
                     unlink($carpeta . $prop['Imagen']);
                     unlink($carpeta . $prop['Archivo']);
                     $slider->setImagen($_FILES['foto1']['name']);
-                    $slider->setArchivo( $_FILES['archivo']['name']);
+                    $slider->setArchivo($_FILES['archivo']['name']);
                 } else if ($_FILES['foto1']['name']) {
                     move_uploaded_file($_FILES['foto1']['tmp_name'], $carpeta . $_FILES['foto1']['name']);
                     unlink($carpeta . $prop['Imagen']);
@@ -87,7 +106,7 @@ class SlidersController{
                 } else {
                     move_uploaded_file($_FILES['archivo']['tmp_name'], $carpeta . $_FILES['archivo']['name']);
                     unlink($carpeta . $prop['Archivo']);
-                    $slider->setArchivo( $_FILES['archivo']['name']);
+                    $slider->setArchivo($_FILES['archivo']['name']);
                     $slider->setImagen($prop['Imagen']);
                 }
             } else {
@@ -95,19 +114,14 @@ class SlidersController{
                 $slider->setArchivo($prop['Archivo']);
             }
 
-            if($slider->updateSlider()){
+            if ($slider->updateSlider()) {
                 header('Location:/sliders/mostrar');
-            }else{
+            } else {
                 echo '<p>Ocurrió algun error!! </p>';
             }
-            
-                
-            
-           
-
         }
-        
-            
+
+
         $router->render('/sliders/modificar', ['row' => $prop]);
     }
 
@@ -119,10 +133,10 @@ class SlidersController{
             $slider = new Sliders();
             $slider->setId($id);
             $prop = $slider->showPropiertiesOneSlider();
-            $carpeta = '../public/boletines_save/';
-            unlink($carpeta . $prop['Foto1']);
-            unlink($carpeta . $prop['Foto2']);
-            $slider->deleteBoletin();
+            $carpeta = '../public/sliders_save/';
+            unlink($carpeta . $prop['Imagen']);
+            unlink($carpeta . $prop['Archivo']);
+            $slider->deleteSlider();
             header('Location:/sliders/mostrar');
         }
     }

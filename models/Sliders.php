@@ -123,12 +123,12 @@ class Sliders{
         $stmt->close();
     }
 
-    public function createBoletin(){
+    public function createSlider(){
 
         try{
             $conn = conectar();
-            $stmt  = $conn->prepare('INSERT INTO tbboletin (Nboletin, Foto1,Foto2,Titulo,DescBreve,DescCompleta,FIngreso,FFinal) VALUES (?,?,?,?,?,?,?,?);');
-            $stmt->bind_param('ssssssss',$this->n_boletin,$this->foto1,$this->foto2,$this->titulo,$this->desc_breve,$this->desc_completa,$this->fecha_i,$this->fecha_f);
+            $stmt  = $conn->prepare('INSERT INTO tbsliders (Estado, NSliders, Imagen, Archivo, Url, Titulo, FIngreso, FFinal) VALUES (?,?,?,?,?,?,?,?);');
+            $stmt->bind_param('ssssssss',$this->estado,$this->NSliders,$this->imagen,$this->Archivo,$this->Url,$this->titulo,$this->fecha_i,$this->fecha_f);
             $stmt->execute();
             if($stmt->affected_rows > 0){
                 return true;
@@ -143,11 +143,11 @@ class Sliders{
         $stmt->close();
     }
 
-    public function deleteBoletin(){
+    public function deleteSlider(){
         try{
             $conn = conectar();
 
-            $stmt = $conn->prepare('DELETE FROM tbboletin where Id = ?;');
+            $stmt = $conn->prepare('DELETE FROM tbsliders where Id = ?;');
             $stmt->bind_param('i',$this->id);
             $stmt->execute();
             if($stmt->affected_rows > 0){

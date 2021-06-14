@@ -2,7 +2,9 @@
     <h2>Listado de todos los Sliders</h2>
     <hr class="divisor">
     <br>
-
+    <a href="/sliders/agregar">Agregar Slider</a>
+    <br>
+    <a href="/usuarios/panel">Regresar al Panel de Control</a>
 
     <table width="934" border="1" align="center" cellpadding="0" cellspacing="0">
         <tr bgcolor="#0099CC">
@@ -67,7 +69,7 @@
                     <div align="center"><a href="/sliders/propiedades?recordID=<?php echo $row['Id']; ?>" onclick="valida();"><img src="../img_menu/ver.jpg" width="47" height="48" /></a>
                     </div>
                 <td width="125">
-                    <div align="center"><a href="Eliminar_sliders.php?recordID=<?php echo $row['Id']; ?>" onclick="if(confirm('¿Realmente deseas eliminarlo?')==false){return false;}"><img src="../img_menu/eliminar.gif" width="30" height="30" border="0" /></a></div>
+                    <div align="center"><a href="/sliders/eliminar?recordID=<?php echo $row['Id']; ?>" onclick="if(confirm('¿Realmente deseas eliminarlo?')==false){return false;}"><img src="../img_menu/eliminar.gif" width="30" height="30" border="0" /></a></div>
                 </td>
             </tr>
         <?php } ?>
