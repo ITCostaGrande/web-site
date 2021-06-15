@@ -1,11 +1,9 @@
-<?php
-
-?>
 <div class=" col-xs-12 centrado">
     <h2>Modificar Usuario</h2>
     <hr class="divisor">
     <br>
-
+    <button type="button" class="btn btn-primary"><a href="/usuarios/mostrar">Mostrar todos</a></button>
+    <button type="button" class="btn btn-primary"><a href="/usuarios/panel">Panel de control</a></button>
     <form method="post" name="form1" id="modificar_usuario">
         <table align="center">
             <tr valign="baseline">

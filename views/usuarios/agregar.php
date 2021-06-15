@@ -2,7 +2,8 @@
     <h2>Formulario para crear un nuevo usuario</h2>
     <hr class="divisor">
     <br>
-
+    <button type="button" class="btn btn-primary"><a href="/usuarios/mostrar">Mostrar todos</a></button>
+    <button type="button" class="btn btn-primary"><a href="/usuarios/panel">Panel de control</a></button>
     <p align="center" class="Estilo1">Agregar Usuario </p>
     <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
