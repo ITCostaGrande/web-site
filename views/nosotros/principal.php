@@ -210,8 +210,13 @@
 			</div>
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
-				<a href='https://elibro.net/es/lc/itcostagrande/login_usuario/?next=/es/lc/itcostagrande/inicio/ target=' _blank'>
+				<a href='https://elibro.net/es/lc/itcostagrande/login_usuario/?next=/es/lc/itcostagrande/inicio/ target='_blank'>
 					<img loading='lazy' src='img/interes/eLibro.png' alt='eLibro' title='eLibro' class='img-fluid' />
+				</a>
+			</div>
+			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
+				<a href='https://itcostagrande.mindbox.app/login/alumno target='_blank'>
+					<img loading='lazy' src='img/interes/mindbox.svg' alt='mindbox' title='mindbox' class='img-fluid' />
 				</a>
 			</div>
 

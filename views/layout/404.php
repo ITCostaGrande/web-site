@@ -32,7 +32,7 @@ body {
 
 <body>
 
-<div id="wrapper"><p><img src="https://www.hostpapa.ca/themes/hostpapaV5/img/logo_hostpapa.png" /></p>
+<div id="wrapper"><p><img src="../img/logos/tecnm.jpg" width="50%" /><img src="../img/logos/itcg2.png" width="30%" /></p>
   <p class="title">404 Page Not Found</p>
   <p>Sorry! The page you requested is unavailable. Please use your browser's Back button, or go to the <a href="/" target="_self">home page</a>.</p>
   </div>

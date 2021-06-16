@@ -87,7 +87,7 @@ class Boletines{
     public function showPropiertiesAll(){
         try{
             $conn = conectar();
-            $stmt = $conn->prepare('SELECT * FROM tbboletin');
+            $stmt = $conn->prepare('SELECT * FROM `tbboletin` ORDER BY FFinal DESC;');
             $stmt->execute();
             $res = $stmt->get_result();
 

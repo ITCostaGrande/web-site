@@ -398,7 +398,7 @@
 					';
 				} 
 				?>
-				<li class="nav-item dropdown">
+				<!-- <li class="nav-item dropdown">
 					<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Transparencia
 					</a>
@@ -419,7 +419,7 @@
 							</a>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 
 				<!--		<li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -702,40 +702,7 @@
 				</ul>
 			</li>
 
-			<li class="nav-item dropdown">
-				<a class="nav-link active dropdown-toggle font-weight-bold" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Vinculación
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="#"> Nivel 2 </a>
-					</li>
-					<li class="nav-item dropdown dropleft">
-						<a class="dropdown-item dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Nivel 2
-						</a>
-						<ul class="dropdown-menu left" aria-labelledby="navbarDropdown1">
-							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
-							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
-							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="#">
-							Nivel 2
-						</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="dropdown-item dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Nivel 2
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
-							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
+			
 
 
 			</ul>
