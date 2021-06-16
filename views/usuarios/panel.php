@@ -1,10 +1,12 @@
-<body>
+<div class="col-xs-12 centrado">
 
-    <h1 align="center">Panel de Control </h1>
-    <h2>Bienvenido <?php 
-    echo $row['Nombre'] . " " . $row['apaterno'] . " " . $row['amaterno']; 
-    ?>
-    </h2>
+    <h2 align="center">Panel de Control </h2>
+    <hr class="divisor">
+    <br>
+    <h3>Bienvenido <?php
+                    echo $row['Nombre'] . " " . $row['apaterno'] . " " . $row['amaterno'];
+                    ?>
+    </h3>
     <table width="864" border="0" cellspacing="0" cellpadding="0">
         <tr>
             <td width="167">Haz iniciado Sesión Como:</td>
@@ -20,20 +22,20 @@
                     echo "<b><p>Servicios Escolares</b></p>";
                 } else if ($row['nivel'] == "Subdireccion") {
                     echo "<b><p>Subdirección</b></p>";
-                }else if ($row['nivel'] == "Comunicacion") {
+                } else if ($row['nivel'] == "Comunicacion") {
                     echo "<b><p>Comunicación</b></p>";
-                }else if($row['nivel'] == 'Recursos Humanos'){
+                } else if ($row['nivel'] == 'Recursos Humanos') {
                     echo '<b><p>Recursos Humanos</p></b>';
                 } else {
                     echo "<b><p>Estudiante</b></p>";
                 }
                 ?>
-                </td>
-            <td width="414">
+            </td>
+            <!-- <td width="414">
                 <div align="right">
                     <p><a href="/usuarios/logout">Cerrar Sesión<img src="../img_menu/exit.jpg" width="74" height="70" border="0" /></a></p>
                 </div>
-            </td>
+            </td> -->
         </tr>
     </table>
 
@@ -60,10 +62,10 @@
                 </div>
             </td>
             <td>
-                <div align="center"><a href="../../sse/busqueda.php"><img src="../img_menu/encuesta.jpg" width="280" height="166" border="0" /></a></div>
+                <div align="center"><a href="#"><img src="../img_menu/encuesta.jpg" width="280" height="166" border="0" /></a></div>
             </td>
         </tr>
     </table>
     <p>&nbsp;</p>
 
-</body>
+</div>

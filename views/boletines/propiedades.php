@@ -1,4 +1,7 @@
 <div class="col-xs-12 centrado">
+    <h2>Propiedades</h2>
+    <hr class="divisor">
+    <br>
     <table width=80% border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC">
         <tr>
             <td>
