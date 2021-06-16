@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
             <label for="final">Fecha de expiración: </label> <br>
-            <input type="date" name="final" value="<?php echo $row['FFinal'];?>">
+            <input class="fecha" type="date" name="final" value="<?php echo $row['FFinal'];?>">
         </div>
         <div class="form-group">
             <label for="foto1">Primera Foto</label> <br>
@@ -38,7 +38,7 @@
             <input type="file" name="foto2" accept="image/jpeg, image/png">
         </div>
         
-        <input type="submit" value="Actualizar Boletín">
+        <input type="submit" class="btn-form" value="Actualizar Boletín">
 
     </form>
 

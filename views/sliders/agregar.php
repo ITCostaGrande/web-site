@@ -18,7 +18,7 @@
 
         <div class="form-group">
             <label for="final">Fecha de expiración: </label> <br>
-            <input type="date" name="final" >
+            <input class="fecha" type="date" name="final" >
         </div>
         <div class="form-group">
             <label for="foto">Slider</label> <br>
@@ -41,7 +41,7 @@
             </select>
         </div>
         
-        <input type="submit" value="Actualizar Boletín">
+        <input class="btn-form" type="submit" value="Actualizar Boletín">
 
     </form>
 

@@ -214,11 +214,11 @@ iframe{
 	   text-align: center;
 	 }
 	 
-	 input[type="text"],
+	 input[type="text"],input[type="password"],
 	 textarea,
 	 select {
 	   background: rgba(255,255,255,0.1);
-	   border: none;
+	   border: 1px solid rgba(47, 47, 47, 0.1);
 	   font-size: 16px;
 	   height: auto;
 	   position: relative;
@@ -231,6 +231,9 @@ iframe{
 	   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	   margin-bottom: 10px;
 	 }
+	 input[type="text"],input[type="password"]{
+		 height: 10px;
+	 }
 	 
 	 
 	 select {
@@ -239,7 +242,7 @@ iframe{
 	   border-radius: 2px;
 	 }
    
-	 #actualizarboletin{
+	 .btn-form{
 	   display: block;
 	   background-color: #0095eb;
 	   padding: 10px 45px 10px 45px;
@@ -270,7 +273,7 @@ iframe{
 	   margin: -120px 110px;
 	 }
 	 
-	 #fecha{
+	 .fecha{
 	   position: relative;
 	   top: 10px;
 	   left: -70px;

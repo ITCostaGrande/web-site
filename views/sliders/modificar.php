@@ -18,7 +18,7 @@
 
 		<div class="form-group">
 			<label for="final">Fecha de expiración </label> 
-			<input id="fecha" type="date" name="final" value="<?php echo $row['FFinal'];?>">
+			<input class="fecha" type="date" name="final" value="<?php echo $row['FFinal'];?>">
 		</div>
 		<div class="form-group">
 			<label id="primerphoto" for="foto">Primera Foto</label> 
@@ -41,7 +41,7 @@
 			</select>
 		</div>
 		
-		<input id="actualizarboletin" type="submit" value="Actualizar Boletín">
+		<input class="btn-form" type="submit" value="Actualizar Boletín">
 
 	</form>
 

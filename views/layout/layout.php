@@ -366,20 +366,6 @@
 
 		<div class="collapse navbar-collapse pl-5 pl-lx-0" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-
-				<!--		<li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Alumnos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Nivel 2 </a>
-                        </li>
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Nivel 2 </a>
-                        </li>
-					</ul>                                                                     -->
-				</li>
 				<?php
 				if (isset($_SESSION['login'])) {
 					echo '
@@ -396,13 +382,13 @@
 
 					</li>
 					';
-				} 
+				}
 				?>
-				<!-- <li class="nav-item dropdown">
+				<li class="nav-item dropdown">
 					<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Transparencia
 					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<li class="nav-item dropdown">
 							<a class="dropdown-item" href="#">
 								Rendición de Cuentas
@@ -418,109 +404,8 @@
 								Nivel 2
 							</a>
 						</li>
-					</ul>
-				</li> -->
-
-				<!--		<li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Egresados
-                    </a>   -->
-				<!--            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Nivel 2 </a>
-                        </li>
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Nivel 2 </a>
-                        </li>
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Nivel 2 </a>
-                        </li>
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> Nivel 2 </a>
-                        </li>
-					</ul>                                                                          -->
+					</ul> -->
 				</li>
-
-				<!--   <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Estadística
-                    </a>																			-->
-				<!--               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> 
-								Nivel 2 
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="dropdown-item" href="#"> 
-								Nivel 2 
-							</a>
-						</li>
-                        <div class="dropdown-divider"></div>
-						<li class="nav-item dropdown dropleft">
-							<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Nivel 2
-							</a>
-							<ul class="dropdown-menu left" aria-labelledby="navbarDropdown1">
-								<li class="nav-item dropdown">
-									<a class="dropdown-item" href="#"> 
-										Nivel 3 
-									</a>
-								</li>
-								<!-- <div class="dropdown-divider"></div> -->
-				<!--			<li class="nav-item dropdown">
-									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Nivel 3
-									</a>																		-->
-				<!--				<ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-										<li class="nav-item dropdown">
-											<a class="dropdown-item" href="#" target='_blank'>
-												Nivel 4
-											</a>
-										</li>
-										<li class="nav-item dropdown">
-											<a class="dropdown-item" href="#" target='_blank'>
-												Nivel 4
-											</a>
-										</li>
-										<li class="nav-item dropdown">
-											<a class="dropdown-item" href="#" target='_blank'>
-												Nivel 4
-											</a>
-										</li>
-									</ul>                                                                     -->
-				<!--				</li>
-								<li class="nav-item dropdown">
-									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Nivel 3
-									</a>
-									<ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-										<li class="nav-item dropdown">
-											<a class="dropdown-item" href="#" target='_blank'>
-												Nivel 4
-											</a>
-										</li>
-										<li class="nav-item dropdown">
-											<a class="dropdown-item" href="#" target='_blank'>
-												Nivel 4
-											</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-                        </li>																								-->
-				<!--		</ul>																								-->
-				<!--      </li>
-				<li class="nav-item"> 
-					<a class="nav-link active" href="#"> Transparencia TecNM </a> 
-				</li>
-
-				<li class="nav-item"> 
-					<a class="nav-link active" href="#"> Personal de Apoyo </a> 
-				</li>  							-->
-
-
 			</ul>
 		</div>
 
@@ -683,7 +568,7 @@
 			</li>
 
 			<li class="nav-item dropdown">
-				<a class="nav-link active font-weight-bold" href="TecNM_Virtual">
+				<a class="nav-link dropdown-toggle active font-weight-bold" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Aspirantes
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -702,7 +587,40 @@
 				</ul>
 			</li>
 
-			
+			<!-- <li class="nav-item dropdown">
+				<a class="nav-link active dropdown-toggle font-weight-bold" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Vinculación
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li class="nav-item dropdown">
+						<a class="dropdown-item" href="#"> Nivel 2 </a>
+					</li>
+					<li class="nav-item dropdown dropleft">
+						<a class="dropdown-item dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Nivel 2
+						</a>
+						<ul class="dropdown-menu left" aria-labelledby="navbarDropdown1">
+							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
+							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
+							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="dropdown-item" href="#">
+							Nivel 2
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="dropdown-item dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Nivel 2
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
+							<li><a class="dropdown-item" href="#"> Nivel 3 </a></li>
+						</ul>
+					</li>
+				</ul>
+			</li> -->
 
 
 			</ul>

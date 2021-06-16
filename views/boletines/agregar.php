@@ -2,6 +2,9 @@
     <h2>Agregar Boletín</h2>
     <hr class="divisor">
     <br>
+    <button type="button" class="btn btn-primary"><a href="/boletines/mostrar">Mostrar todos</a></button>
+    <button type="button" class="btn btn-primary"><a href="/usuarios/panel">Panel de control</a></button>
+
 
     <form name="agregar-boletin" method="POST" enctype="multipart/form-data">
         <div class="form-group">
@@ -24,7 +27,7 @@
         </div>
         <div class="form-group">
             <label for="final">Fecha de expiración: </label> <br>
-            <input type="date" name="final">
+            <input class="fecha" type="date" name="final">
         </div>
         <div class="form-group">
             <label for="foto1">Primera Foto</label> <br>
@@ -35,7 +38,7 @@
             <input type="file" name="foto2" accept="image/jpeg, image/png">
         </div>
         
-        <input type="submit" value="Crear Boletín">
+        <input class="btn-form" type="submit" value="Crear Boletín">
 
     </form>
 
