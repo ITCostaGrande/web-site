@@ -2,7 +2,7 @@
 
     <h1 align="center">Panel de Control </h1>
     <h2>Bienvenido <?php 
-    echo $nombre . " " . $paterno . " " . $materno; 
+    echo $row['Nombre'] . " " . $row['apaterno'] . " " . $row['amaterno']; 
     ?>
     </h2>
     <table width="864" border="0" cellspacing="0" cellpadding="0">
@@ -12,17 +12,17 @@
 
                 <?php
 
-                if ($nivel == "Administrador") {
+                if ($row['nivel'] == "Administrador") {
                     echo "<p><b>Administrador</b></p>";
-                } else if ($nivel == "Recursos Financieros") {
+                } else if ($row['nivel'] == "Recursos Financieros") {
                     echo "<b><p>Recursos Financieros</b></p>";
-                } else if ($nivel == "Servicios Escolares") {
+                } else if ($row['nivel'] == "Servicios Escolares") {
                     echo "<b><p>Servicios Escolares</b></p>";
-                } else if ($nivel == "Subdireccion") {
+                } else if ($row['nivel'] == "Subdireccion") {
                     echo "<b><p>Subdirección</b></p>";
-                }else if ($nivel == "Comunicacion") {
+                }else if ($row['nivel'] == "Comunicacion") {
                     echo "<b><p>Comunicación</b></p>";
-                }else if($nivel == 'Recursos Humanos'){
+                }else if($row['nivel'] == 'Recursos Humanos'){
                     echo '<b><p>Recursos Humanos</p></b>';
                 } else {
                     echo "<b><p>Estudiante</b></p>";

@@ -18,8 +18,11 @@ class UsuariosController
 
     public static function panel(Router $router)
     {
-
-        $router->render('/usuarios/panel');
+        
+        $user = new Usuarios();
+        $user->setId($_SESSION['id']);
+        $prop = $user->showPropiertesUser();
+        $router->render('/usuarios/panel',['row'=>$prop]);
     }
 
     public static function login(Router $router)
@@ -29,19 +32,10 @@ class UsuariosController
             $user->setLogin($_POST['login']);
             $user->setPass($_POST['pass']);
             if ($user->login()) {
-                $resultado = 'Has iniciado sesión prro';
-                $user->setId($_SESSION['id']);
-                $propiedades = $user->showPropiertesUser();
-
-                $router->render('/usuarios/panel', [
-                    'login' => $propiedades['login'],
-                    'nombre' => $propiedades['Nombre'],
-                    'paterno' => $propiedades['apaterno'],
-                    'materno' => $propiedades['amaterno'],
-                    'nivel' => $propiedades['nivel']
-                ]);
-            } else {
-                $resultado = 'No se ha podido iniciar sesión';
+                
+                header('Location:/usuarios/panel');
+            }else{
+                echo '<p>No se ha podido iniciar sesión</p>';
             }
         }
 
@@ -50,7 +44,8 @@ class UsuariosController
 
     public static function logout(Router $router)
     {
-        session_destroy();
+        session_start();
+        $_SESSION = [];
         header('Location: /usuarios/login');
     }
 

@@ -11,7 +11,7 @@
             <td>
                 <h1 align="center">Iniciar Sesión</h1>
                 <h1 align="center"><img src="../img/muchas/logotec.png" width="80" height="78" /> </h1>
-                <form name="miform" action="/usuarios/login" method="POST">
+                <form name="miform" method="POST">
                     <div align="center"><br />
                         Login:
                         <br />

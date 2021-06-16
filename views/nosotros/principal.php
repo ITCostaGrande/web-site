@@ -68,8 +68,8 @@
 							</div>
 
 							<div class='col-12' style='position: absolute; bottom: 0px;'>
-								<a href='?vista=Noticia&id=1' target='_blank'>
-									LEER MÁS
+								<a href='/boletines/ver?id=<?php echo $row['Id'];?>'>
+									LEER MÁS 
 								</a>
 							</div>
 

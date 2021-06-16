@@ -67,36 +67,42 @@ $router->get('/becas/resultados',[BecasController::class,'resultados']);
 $router->get('/aspirantes/',[AspirantesController::class,'fichas']);
 $router->get('/aspirantes/fichas',[AspirantesController::class,'fichas']);
 $router->get('/aspirantes/formatos',[AspirantesController::class,'formatos']);
+$router->get('/boletines/ver',[BoletinesController::class,'ver']);
 
 // Rutas para los usuarios
-$router->get('/usuarios/mostrar',[UsuariosController::class,'mostrar']);
-$router->get('/usuarios/panel',[UsuariosController::class,'panel']);
 $router->get('/usuarios/login',[UsuariosController::class,'login']);
 $router->post('/usuarios/login',[UsuariosController::class,'login']);
-$router->get('/usuarios/logout',[UsuariosController::class,'logout']);
-$router->get('/usuarios/agregar',[UsuariosController::class,'agregar']);
-$router->post('/usuarios/agregar',[UsuariosController::class,'agregar']);
-$router->get('/usuarios/modificar',[UsuariosController::class,'modificar']);
-$router->post('/usuarios/modificar',[UsuariosController::class,'modificar']);
-$router->get('/usuarios/eliminar',[UsuariosController::class,'eliminar']);
 
-// Rutas para los boletines
-$router->get('/boletines/mostrar',[BoletinesController::class,'mostrar']);
-$router->get('/boletines/agregar',[BoletinesController::class,'agregar']);
-$router->post('/boletines/agregar',[BoletinesController::class,'agregar']);
-$router->get('/boletines/modificar',[BoletinesController::class,'modificar']);
-$router->post('/boletines/modificar',[BoletinesController::class,'modificar']);
-$router->get('/boletines/eliminar',[BoletinesController::class,'eliminar']);
-$router->get('/boletines/propiedades',[BoletinesController::class,'propiedades']);
+session_start();
+if(isset($_SESSION['login'])){
+    $router->get('/usuarios/mostrar',[UsuariosController::class,'mostrar']);
+    $router->get('/usuarios/panel',[UsuariosController::class,'panel']);
+    $router->get('/usuarios/logout',[UsuariosController::class,'logout']);
+    $router->get('/usuarios/agregar',[UsuariosController::class,'agregar']);
+    $router->post('/usuarios/agregar',[UsuariosController::class,'agregar']);
+    $router->get('/usuarios/modificar',[UsuariosController::class,'modificar']);
+    $router->post('/usuarios/modificar',[UsuariosController::class,'modificar']);
+    $router->get('/usuarios/eliminar',[UsuariosController::class,'eliminar']);
 
-// Rutas para los sliders
-$router->get('/sliders/mostrar',[SlidersController::class,'mostrar']);
-$router->get('/sliders/agregar',[SlidersController::class,'agregar']);
-$router->post('/sliders/agregar',[SlidersController::class,'agregar']);
-$router->get('/sliders/modificar',[SlidersController::class,'modificar']);
-$router->post('/sliders/modificar',[SlidersController::class,'modificar']);
-$router->get('/sliders/eliminar',[SlidersController::class,'eliminar']);
-$router->get('/sliders/propiedades',[SlidersController::class,'propiedades']);
+    // Rutas para los boletines
+    $router->get('/boletines/mostrar',[BoletinesController::class,'mostrar']);
+    $router->get('/boletines/agregar',[BoletinesController::class,'agregar']);
+    $router->post('/boletines/agregar',[BoletinesController::class,'agregar']);
+    $router->get('/boletines/modificar',[BoletinesController::class,'modificar']);
+    $router->post('/boletines/modificar',[BoletinesController::class,'modificar']);
+    $router->get('/boletines/eliminar',[BoletinesController::class,'eliminar']);
+    $router->get('/boletines/propiedades',[BoletinesController::class,'propiedades']);
+
+    // Rutas para los sliders
+    $router->get('/sliders/mostrar',[SlidersController::class,'mostrar']);
+    $router->get('/sliders/agregar',[SlidersController::class,'agregar']);
+    $router->post('/sliders/agregar',[SlidersController::class,'agregar']);
+    $router->get('/sliders/modificar',[SlidersController::class,'modificar']);
+    $router->post('/sliders/modificar',[SlidersController::class,'modificar']);
+    $router->get('/sliders/eliminar',[SlidersController::class,'eliminar']);
+    $router->get('/sliders/propiedades',[SlidersController::class,'propiedades']);
+}
+
 
 
 

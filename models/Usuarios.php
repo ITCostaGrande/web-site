@@ -82,6 +82,7 @@ class Usuarios{
             if($fetch){
                 session_start();
                 $_SESSION['id'] = $fetch['IdUsuario'];
+                $_SESSION['login'] = true;
                 return true;
 
             }else{

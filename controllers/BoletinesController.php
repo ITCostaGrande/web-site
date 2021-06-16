@@ -134,4 +134,17 @@ class BoletinesController
             header('Location:/boletines/mostrar');
         }
     }
+    
+    public static function ver(Router $router){
+
+        $id = $_GET['id'];
+        if (verificarGET($id, '/')) {
+
+            $boletin = new Boletines();
+            $boletin->setId($id);
+            $prop = $boletin->showPropiertiesOneBoletin();
+            
+        }
+        $router->render('/boletines/ver',['row'=>$prop]);
+    }
 }
