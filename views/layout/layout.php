@@ -384,9 +384,17 @@
 				if (isset($_SESSION['login'])) {
 					echo '
 					<li class="nav-item dropdown">
-						<a class="nav-link active " href="/usuarios/logout" >
-						Cerrar Sesión
+						<a class="nav-link active " href="/usuarios/panel" >
+						<b class="text-success">Volver al Panel</b>
 						</a>
+
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link active " href="/usuarios/logout" >
+						<b class="text-danger">Cerrar Sesión</b>
+						</a>
+
+					</li>
 					';
 				} 
 				?>

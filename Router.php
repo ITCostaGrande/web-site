@@ -32,7 +32,7 @@ class Router{
             //Cuando la URL existe
             call_user_func($fn,$this);
         }else{
-            echo '404 not found';
+            include __DIR__ ."/views/layout/404.php";
         }
     }
 
