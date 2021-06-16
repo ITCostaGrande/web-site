@@ -2,10 +2,19 @@
 
 namespace Controllers;
 use MVC\Router;
+use Model;
 class ConocenosController{
 
     public static function index(Router $router){
-        $router->render('/nosotros/principal');
+
+        $boletin = new Model\Boletines();
+        $bol = $boletin->showExist();
+
+        $slider = new Model\Sliders();
+        $slid = $slider->showExist();
+
+
+    $router->render('/nosotros/principal',['boletines' =>$bol, 'sliders' => $slid]);
     }
 
     public static function nosotros(Router $router){

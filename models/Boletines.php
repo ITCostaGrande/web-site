@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 use FFI\Exception;
-include '../config/database.php';
+require_once '../config/database.php';
 
 class Boletines{
 
@@ -184,6 +184,26 @@ class Boletines{
 
         }
         
+        $conn->close();
+        $stmt->close();
+    }
+
+    //Mostrar boletines en el index
+    public function showExist(){
+        try{
+            $conn  = conectar();
+            $stmt = $conn->prepare('SELECT * FROM tbboletin where FFinal >= curdate();');
+            $stmt->execute();
+            $res = $stmt->get_result();
+            if($res){
+                return $res;
+            }else{
+                return false;
+            }
+        }catch(Exception $e){
+            $e->getMessage();
+        }
+
         $conn->close();
         $stmt->close();
     }
