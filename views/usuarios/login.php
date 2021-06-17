@@ -37,7 +37,6 @@
 
     <table width="257" border="1" align="center" cellpadding="0" cellspacing="0">
         <tr>
-            <td width="128"><a href="../sse/alta.php" target="_self">Registrate</a></td>
             <td width="123"><a href="/" target="_self">Página Principal </a></td>
         </tr>
     </table>

@@ -1,7 +1,6 @@
 <div align="left" class="Estilo4 centrado col-xs-12">
     <h2>REQUISITOS DE REINSCRIPCIÓN </h2>
-
-    <br>
+    <hr class="divisor">
     <br>
     <div class="reinscripcion">
         <div align="justify" ; alt="" width="680" height="29"">

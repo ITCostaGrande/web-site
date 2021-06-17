@@ -434,11 +434,11 @@
 						Conócenos
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li class="nav-item dropdown">
+						<!-- <li class="nav-item dropdown">
 							<a class="dropdown-item" href="/conocenos/nosotros">
 								Nosotros
 							</a>
-						</li>
+						</li> -->
 						<li class="nav-item dropdown">
 							<a class="dropdown-item" href="/conocenos/mensaje">
 								Mensaje del Director
@@ -446,11 +446,15 @@
 						</li>
 						<li class="nav-item dropdown">
 
-						<li><a class="dropdown-item" href="/conocenos/mision"> Misión </a></li>
+						<li>
+							<a class="dropdown-item" href="/conocenos/mision"> Misión </a>
+						</li>
 				</li>
-				<li class="nav-item dropdown">
+				
 
-				<li><a class="dropdown-item" href="/conocenos/vision"> Visión </a></li>
+				<!-- <li>
+					<a class="dropdown-item" href="/conocenos/vision"> Visión </a>
+				</li> -->
 				</li>
 				<li class="nav-item dropdown">
 					<a class="dropdown-item" href="/conocenos/valores">
@@ -467,16 +471,16 @@
 						Organigrama institucional
 					</a>
 				</li>
-				<li class="nav-item dropdown">
+				<!-- <li class="nav-item dropdown">
 					<a class="dropdown-item" href="/conocenos/directorio">
 						Directorio
 					</a>
-				</li>
-				<li class="nav-item dropdown">
+				</li> -->
+				<!-- <li class="nav-item dropdown">
 					<a class="dropdown-item" href="/conocenos/avisos">
 						Avisos importantes
 					</a>
-				</li>
+				</li> -->
 				<li class="nav-item dropdown">
 					<a class="dropdown-item" href="/conocenos/normateca">
 						Normateca
@@ -526,17 +530,17 @@
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="https://www.facebook.com/people/ITcostagrande-Egresados-Egresadas/100009172500207/"> Egresados </a>
 					</li>
-					<li class="nav-item dropdown">
+					<!-- <li class="nav-item dropdown">
 						<a class="dropdown-item" href="/estudiantes/bolsa"> Bolsa de trabajo </a>
-					</li>
+					</li> -->
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/estudiantes/buzon"> Buzon de observ. y sug. </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/Normatividad/Manual_de_Lineamientos_TecNM.pdf"> Manual de lineamientos </a>
+						<a class="dropdown-item" href="../archivos/Normatividad/Manual_de_Lineamientos_TecNM.pdf" target="_blank"> Manual de lineamientos </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/Normatividad/reglamento_alumnos.pdf"> Reglamento de alumnos </a>
+						<a class="dropdown-item" href="../archivos/Normatividad/reglamento_alumnos.pdf" target="_blank"> Reglamento de alumnos </a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/estudiantes/biblioteca_digital"> Biblioteca digital </a>
@@ -547,9 +551,9 @@
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/estudiantes/cisco"> Cisco Networking Academy ITCG </a>
 					</li>
-					<li class="nav-item dropdown">
+					<!-- <li class="nav-item dropdown">
 						<a class="dropdown-item" href="https://www.itcostagrande.edu.mx/menu_sse/login.php"> Encuestas </a>
-					</li>
+					</li> -->
 				</ul>
 			</li>
 
@@ -559,7 +563,7 @@
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="http://www.cnbes.sep.gob.mx/"> CNBES </a>
+						<a class="dropdown-item" href="http://www.cnbes.sep.gob.mx/"target="_blank" > CNBES </a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/becas/resultados"> Resultados </a>
@@ -576,10 +580,10 @@
 						<a class="dropdown-item" href="/aspirantes/fichas"> Fichas </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/Lista_aspirtantes_ACEPTADOS.pdf"> Lista de aceptados </a>
+						<a class="dropdown-item" href="../archivos/Lista_aspirtantes_ACEPTADOS.pdf" target="_blank"> Lista de aceptados </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/escolares/requisitosdeinscripcion.pdf"> Inscripciones </a>
+						<a class="dropdown-item" href="../archivos/escolares/requisitosdeinscripcion.pdf" target="_blank"> Inscripciones </a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/aspirantes/formatos"> Formatos </a>
