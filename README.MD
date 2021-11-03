@@ -4,3 +4,5 @@
 
 
 ### Para visita el login es necesario ingresar la URL:```/usuarios/login ```
+
+# El archivo para configurar la base de datos esta en /config/database.php
