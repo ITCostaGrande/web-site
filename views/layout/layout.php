@@ -12,6 +12,8 @@
 	<meta name="copyright" content="TecNM/ITCostaGrande" />
 	<meta name="robots" content="ALL">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../css/MyStyles.css">
+	
 	<link rel="icon" href="../img/favicon/tecnm.ico" />
 
 	<!-- CSS Bootstrap -->
@@ -245,7 +247,7 @@
 
 	<!-- MENU GOBERNACIÓN -->
 	<header id='header'>
-		<?php session_start(); ?>
+		<?php //session_start(); ?>
 		<nav class="navbar fixed-top" id="barraGobmx" style="background:#0b231e; position: fixed;">
 
 			<div class="container u-noPaddingContainer">
@@ -915,7 +917,48 @@
 
 		</footer>
 	</div>
+<img src="../img/botoncontacto/contacto.png" onmouseover="this.src='../img/botoncontacto/contacto2.png';" onmouseout="this.src='../img/botoncontacto/contacto.png';" id="Bcontacto"  title="Contactar al Campus ITCostaGrande" onclick="mostrar()" />
+<!--Div que contiene a todo el formulario--> 
 
+<div id="formulario">   
+  <!--Boton para minimizar la ventana de contacto--> 
+  <button id="Bminimizar" onclick="mostrar()"  title="Minimizar la ventana">━</button>
+  <h2 align="center" id="titulo">¡Bienvenido!</h2>
+    <form action="/contacto" method="post" id="formcontacto">     
+      
+        <p>
+          <label for="nombre" class="campos">Nombre:</label><br>
+          <input type="text" name="nombre" class="campos" required>
+        </p>  
+        <p>
+          <label for="seleccion" class="campos">Selecciona el departamento:</label><br>
+          <select name="seleccion" required class="campos">
+          <option value="1" class="campos">CENTRO DE INFORMACIÓN</option>
+          <option value="2" class="campos">GESTIÓN TECNOLÓGICA Y VINCULACIÓN</option>
+          <option value="3" class="campos">SERVICIOS ESCOLARES</option>
+          <option value="4" class="campos">ACTIVIDADES ESCOLARES</option>
+          <option value="5" class="campos">DIVISIÓN DE ESTUDIOS PROFESIONALES</option>
+          </select>
+        </p>
+        <p>
+          <label for="telefono" class="campos">Teléfono:</label><br>
+          <input type="tel" onpaste="return false;" onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" maxlength="10" name="telefono"  class="campos" required>
+        </p>
+        <p>
+          <label for="E-mail" class="campos">E-mail:</label><br>
+          <input type="email" name="email" class="campos" required>
+        </p>
+        <p>
+          <label for="mensaje" class="campos">Mensaje:</label>  <br>                   
+          <textarea name="mensaje" required style="resize:none" class="campos"></textarea>   
+        </p>     
+        <p>           
+          <button type="submit" name="submit">Enviar</button>   
+        </p>       
+     
+    </form> 
+  
+</div>
 	<!-- Menú Azul - Permite el desglose -->
 	<script src="../js/bootnavbar.js"></script>
 	<script>
@@ -926,7 +969,7 @@
 			});
 		})
 	</script>
-
+	<script src="../js/funciones.js"></script>
 </body>
 
 </html>

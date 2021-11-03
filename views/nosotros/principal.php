@@ -1,14 +1,14 @@
 <section class='one-time principal border'>
 
-<?php
-	while($row = $sliders->fetch_assoc()){ ?>
-	<div class='carousel-item active' style='background-image: url("../sliders_save/<?php echo $row['Imagen'];?>");'>
-		<a href='<?php echo ($row['Archivo'] != "") ? "../sliders_save/". $row['Archivo'] : $row['Url']; ?>' target='_blank'>
+<!-- <?php
+	//while($row = $sliders->fetch_assoc()){ ?>
+	<div class='carousel-item active' style='background-image: url("../sliders_save/<?php //echo $row['Imagen'];?>");'>
+		<a href='<?php //echo ($row['Archivo'] != "") ? "../sliders_save/". $row['Archivo'] : $row['Url']; ?>' target='_blank'>
 			<div style='width:100%; height:100%'></div>
 		</a>
 	</div>
 
-	<?php }?>
+	<?php //}?> -->
 
 	<!-- <div class='carousel-item' style='background-image: url("../img/slider/encuesta a egresados slider gral.jpg");'>
 		<a href='../img/slider/encuesta a egresados slider gral.jpg' target='_blank'>
@@ -55,26 +55,28 @@
 
 				</div>
 				<div class='center slider my-0' id='noticias'>
+					<!--
 					<?php
-					while ($row = $boletines->fetch_assoc()) { ?>
+					
+					//while ($row = $boletines->fetch_assoc()) { ?>
 						<div class='row justify-concent-center' style='posicion: relative;'>
 
 							<div class='col-12'>
-								<img class='img-fluid mx-auto w-100' style='height: 150px;' src='../boletines_save/<?php echo $row['Foto1']; ?>' alt='' />
+								<img class='img-fluid mx-auto w-100' style='height: 150px;' src='../boletines_save/<?php //echo $row['Foto1']; ?>' alt='' />
 							</div>
 
 							<div class='h6 col-12 py-2 mb-4'>
-								<?php echo $row['Titulo']; ?>
+								<?php //echo $row['Titulo']; ?>
 							</div>
 
 							<div class='col-12' style='position: absolute; bottom: 0px;'>
-								<a href='/boletines/ver?id=<?php echo $row['Id'];?>'>
+								<a href='/boletines/ver?id=<?php //echo $row['Id'];?>'>
 									LEER MÁS 
 								</a>
 							</div>
 
 						</div>
-					<?php	} ?>
+					<?php	//} ?> -->
 
 
 

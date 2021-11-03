@@ -11,6 +11,7 @@ use Controllers\BecasController;
 use Controllers\UsuariosController;
 use Controllers\BoletinesController;
 use Controllers\SlidersController;
+use Controllers\ContactoController;
 //referencia al objeto router
 $router = new Router;
 
@@ -72,7 +73,8 @@ $router->get('/boletines/ver',[BoletinesController::class,'ver']);
 // Rutas para los usuarios
 $router->get('/usuarios/login',[UsuariosController::class,'login']);
 $router->post('/usuarios/login',[UsuariosController::class,'login']);
-
+// Ruta de contacto
+$router->post('/contacto',[ContactoController::class,'contacto']);
 session_start();
 if(isset($_SESSION['login'])){
     $router->get('/usuarios/mostrar',[UsuariosController::class,'mostrar']);

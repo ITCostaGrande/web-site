@@ -4,7 +4,9 @@
     "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Model\\": "./models",
