@@ -1,5 +1,5 @@
 <?php
-/*
+
 function conectar(){
     $conn = mysqli_connect('localhost','root','','itcos268_bdtec');
     if(!$conn){
@@ -8,7 +8,7 @@ function conectar(){
     }
 
     return $conn; 
-}*/
+}
 
     
     
