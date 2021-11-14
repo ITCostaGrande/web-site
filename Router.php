@@ -20,8 +20,9 @@ class Router{
     public function comprobarRutas(){
 
         $urlAcutal = $_SERVER['PATH_INFO'] ?? '/';
+        echo $urlAcutal;
         $metodo = $_SERVER['REQUEST_METHOD'];
-
+        echo $metodo;
         if($metodo === 'GET'){
             $fn= $this->rutasGET[$urlAcutal] ?? null;
         }else{
@@ -42,6 +43,7 @@ class Router{
             $$key = $value;
         }
         ob_start();
+        echo __DIR__;
         include __DIR__."/views/$view.php";
         $contenido = ob_get_clean();
 

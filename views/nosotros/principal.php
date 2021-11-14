@@ -1,14 +1,14 @@
 <section class='one-time principal border'>
 
  <?php
-	while($row = $sliders->fetch_assoc()){ ?>
-	<div class='carousel-item active' style='background-image: url("../sliders_save/<?php echo $row['Imagen'];?>");'>
-		<a href='<?php echo ($row['Archivo'] != "") ? "../sliders_save/". $row['Archivo'] : $row['Url']; ?>' target='_blank'>
+	//while($row = $sliders->fetch_assoc()){ ?>
+	<!--<div class='carousel-item active' style='background-image: url("../sliders_save/<?php //echo $row['Imagen'];?>");'>
+		<a href='<?php //echo ($row['Archivo'] != "") ? "../sliders_save/". $row['Archivo'] : $row['Url']; ?>' target='_blank'>
 			<div style='width:100%; height:100%'></div>
 		</a>
-	</div>
+	</div>-->
 
-	<?php }?> 
+	<?// }?> 
 
 	<!-- <div class='carousel-item' style='background-image: url("../img/slider/encuesta a egresados slider gral.jpg");'>
 		<a href='../img/slider/encuesta a egresados slider gral.jpg' target='_blank'>
@@ -58,25 +58,25 @@
 					
 					<?php
 					
-					while ($row = $boletines->fetch_assoc()) { ?>
+					//while ($row = $boletines->fetch_assoc()) { ?>
 						<div class='row justify-concent-center' style='posicion: relative;'>
 
-							<div class='col-12'>
-								<img class='img-fluid mx-auto w-100' style='height: 150px;' src='../boletines_save/<?php echo $row['Foto1']; ?>' alt='' />
+							<!--<div class='col-12'>
+								<img class='img-fluid mx-auto w-100' style='height: 150px;' src='../boletines_save/<?php //echo $row['Foto1']; ?>' alt='' />
 							</div>
 
 							<div class='h6 col-12 py-2 mb-4'>
-								<?php echo $row['Titulo']; ?>
+								<?php //echo $row['Titulo']; ?>
 							</div>
 
 							<div class='col-12' style='position: absolute; bottom: 0px;'>
-								<a href='/boletines/ver?id=<?php echo $row['Id'];?>'>
+								<a href='/boletines/ver?id=<?php //echo $row['Id'];?>'>
 									LEER MÁS 
 								</a>
-							</div>
+							</div>-->
 
 						</div>
-					<?php	} ?> 
+					<?//	} ?> 
 
 
 
@@ -119,50 +119,50 @@
 			<section class='anexos bg-light pb-2 anexo sitios'>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/pronunciamiento.pdf'>
-						<img loading='lazy' src='img/anexos/pronunciamiento.png' />
+					<a target='_blank' href='./public/pdf/anexos/pronunciamiento.pdf'>
+						<img loading='lazy' src='./public/img/anexos/pronunciamiento.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/Protocolo_HSyAS.pdf'>
-						<img loading='lazy' src='img/anexos/protocolo_prevencion.png' />
+					<a target='_blank' href='./public/pdf/anexos/Protocolo_HSyAS.pdf'>
+						<img loading='lazy' src='./public/img/anexos/protocolo_prevencion.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/SFP-CE-2019_Codigo_de_Etica.pdf'>
-						<img loading='lazy' src='img/anexos/codigo_etica.png' />
+					<a target='_blank' href='./public/pdf/anexos/SFP-CE-2019_Codigo_de_Etica.pdf'>
+						<img loading='lazy' src='./public/img/anexos/codigo_etica.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/M00-CC-01_Codigo_de_Conducta.pdf'>
-						<img loading='lazy' src='img/anexos/codigo_conducta.png' />
+					<a target='_blank' href='./public/pdf/anexos/M00-CC-01_Codigo_de_Conducta.pdf'>
+						<img loading='lazy' src='./public/img/anexos/codigo_conducta.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/estrategias_austeridad.pdf'>
-						<img loading='lazy' src='img/anexos/estrategias_austeridad.png' />
+					<a target='_blank' href='./public/pdf/anexos/estrategias_austeridad.pdf'>
+						<img loading='lazy' src='./public/img/anexos/estrategias_austeridad.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/Convocatoria_Seguro.pdf'>
-						<img loading='lazy' src='img/anexos/convocatoria_seguro.png' />
+					<a target='_blank' href='./public/pdf/anexos/Convocatoria_Seguro.pdf'>
+						<img loading='lazy' src='./public/img/anexos/convocatoria_seguro.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/Informe_Anual_Actividades_ CEPCI_TecNM.pdf'>
-						<img loading='lazy' src='img/anexos/comite_etica.png' />
+					<a target='_blank' href='./public/pdf/anexos/Informe_Anual_Actividades_ CEPCI_TecNM.pdf'>
+						<img loading='lazy' src='./public/img/anexos/comite_etica.png' />
 					</a>
 				</div>
 
 				<div>
-					<a target='_blank' href='pdf/anexos/decreto_tecnm.pdf'>
-						<img loading='lazy' src='img/anexos/decreto_creacion.png' />
+					<a target='_blank' href='./public/pdf/anexos/decreto_tecnm.pdf'>
+						<img loading='lazy' src='./public/img/anexos/decreto_creacion.png' />
 					</a>
 				</div>
 
@@ -183,42 +183,42 @@
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='https://www.conacyt.gob.mx/' target='_blank'>
-					<img loading='lazy' src='img/interes/CONACYT.png' alt='CONACYT' title='CONACYT' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/CONACYT.png' alt='CONACYT' title='CONACYT' class='img-fluid' />
 				</a>
 			</div>
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='https://www.conricyt.mx/' target='_blank'>
-					<img loading='lazy' src='img/interes/CONRICYT.png' alt='CONRICYT' title='CONRICYT' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/CONRICYT.png' alt='CONRICYT' title='CONRICYT' class='img-fluid' />
 				</a>
 			</div>
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='http://www.ifai.org.mx/' target='_blank'>
-					<img loading='lazy' src='img/interes/INAI.png' alt='INAI' title='INAI' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/INAI.png' alt='INAI' title='INAI' class='img-fluid' />
 				</a>
 			</div>
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='http://consultapublicamx.inai.org.mx:8080/vut-web/?idSujetoObigadoParametro=10009&amp;idEntidadParametro=33&amp;idSectorParametro=21' target='_blank'>
-					<img loading='lazy' src='img/interes/PNT.png' alt='PNT' title='PNT' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/PNT.png' alt='PNT' title='PNT' class='img-fluid' />
 				</a>
 			</div>
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='Dir_Posgrado'>
-					<img loading='lazy' src='img/interes/contraloria.png' alt='Dir_Posgrado' title='Dir_Posgrado' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/contraloria.png' alt='Dir_Posgrado' title='Dir_Posgrado' class='img-fluid' />
 				</a>
 			</div>
 
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='https://elibro.net/es/lc/itcostagrande/login_usuario/?next=/es/lc/itcostagrande/inicio/ target='_blank'>
-					<img loading='lazy' src='img/interes/eLibro.png' alt='eLibro' title='eLibro' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/eLibro.png' alt='eLibro' title='eLibro' class='img-fluid' />
 				</a>
 			</div>
 			<div class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mb-3'>
 				<a href='https://itcostagrande.mindbox.app/login/alumno target='_blank'>
-					<img loading='lazy' src='img/interes/mindbox.svg' alt='mindbox' title='mindbox' class='img-fluid' />
+					<img loading='lazy' src='./public/img/interes/mindbox.svg' alt='mindbox' title='mindbox' class='img-fluid' />
 				</a>
 			</div>
 

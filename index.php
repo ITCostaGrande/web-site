@@ -1,5 +1,5 @@
 <?php
-require "../vendor/autoload.php";
+require "./vendor/autoload.php";
 
 
 use MVC\Router;
@@ -32,7 +32,7 @@ $router->get('/conocenos/normateca',[ConocenosController::class,'normateca']);
 
 //Rutas de la carpeta oferta
 $router->get('/oferta/',[OfertaController::class,'presencial']);
-$router->get('/oferta/presencial',[OfertaController::class,'presencial']);
+$router->get('/web-site/oferta/presencial',[OfertaController::class,'presencial']);
 $router->get('/oferta/distancia',[OfertaController::class,'distancia']);
 $router->get('/oferta/arquitectura',[OfertaController::class,'arquitectura']);
 $router->get('/oferta/cp',[OfertaController::class,'cp']);
@@ -104,8 +104,6 @@ if(isset($_SESSION['login'])){
     $router->get('/sliders/eliminar',[SlidersController::class,'eliminar']);
     $router->get('/sliders/propiedades',[SlidersController::class,'propiedades']);
 }
-
-
 
 
 $router->comprobarRutas();
