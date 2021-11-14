@@ -12,26 +12,26 @@
 	<meta name="copyright" content="TecNM/ITCostaGrande" />
 	<meta name="robots" content="ALL">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="../css/MyStyles.css">
+	<link rel="stylesheet" href="./public/css/MyStyles.css">
 	
-	<link rel="icon" href="../img/favicon/tecnm.ico" />
+	<link rel="icon" href="./public/img/favicon/tecnm.ico" />
 
 	<!-- CSS Bootstrap -->
-	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./public/assets/bootstrap/css/bootstrap.min.css">
 
 	<!-- Mis estilos -->
-	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="./public/css/estilos.css">
 
 	<!-- Iconos con Font Awesome -->
-	<link rel="stylesheet" href="../assets/files/main/css/fa-svg-with-js.css">
-	<link rel="stylesheet" href="../iconos/iconos.css">
+	<link rel="stylesheet" href="./public/assets/files/main/css/fa-svg-with-js.css">
+	<link rel="stylesheet" href="./public/iconos/iconos.css">
 
 	<!-- Se agrega para poder usar las fuentes en el css -->
-	<link rel="stylesheet" href="../assets/files/main/css/estilo-compresion.min.css">
-	<link rel="stylesheet" href="../assets/files/main/css/jssorStyle.css">
+	<link rel="stylesheet" href="./public/assets/files/main/css/estilo-compresion.min.css">
+	<link rel="stylesheet" href="./public/assets/files/main/css/jssorStyle.css">
 
-	<link href="../css/noticarrusel/slick-theme.css" rel="stylesheet" />
-	<link href="../css/noticarrusel/slick.css" rel="stylesheet" />
+	<link href="./public/css/noticarrusel/slick-theme.css" rel="stylesheet" />
+	<link href="./public/css/noticarrusel/slick.css" rel="stylesheet" />
 
 	<!-- Estilo del carrucel -->
 	<style>
@@ -130,7 +130,7 @@
 
 	<!-- Desface -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<script src="../js/modificar.js"></script>
+	<script src="./public/js/modificar.js"></script>
 	<script>
 		$(document).ready(function() {
 			setTimeout(function() {
@@ -155,7 +155,7 @@
 	</script>
 
 	<!-- Sub Menú -->
-	<link rel="stylesheet" href="../css/bootnavbar.css">
+	<link rel="stylesheet" href="./public/css/bootnavbar.css">
 
 	<!-- Menú Fijo -->
 	<style>
@@ -286,13 +286,13 @@
 				<div class="col-md-12" col style="max-width:60%">
 					<div class="d-inline-block text-left">
 						<a href="https://www.gob.mx/" target="_blank" id="pleca_1" class='d-none d-xl-inline'>
-							<img loading='lazy' src="../img/logos/gobierno_mexico.png" alt="Gobierno de México" class="plecaGob gob">
+							<img loading='lazy' src="./public/img/logos/gobierno_mexico.png" alt="Gobierno de México" class="plecaGob gob">
 						</a>
 						<a href="https://www.gob.mx/sep" target="_blank" id="pleca_2">
-							<img loading='lazy' src="../img/logos/educacion.png" alt="Educación" class="plecaGob gob">
+							<img loading='lazy' src="./public/img/logos/educacion.png" alt="Educación" class="plecaGob gob">
 						</a>
 						<a href="/" id="pleca_3">
-							<img loading='lazy' src="../img/logos/tecnm.jpg" alt="TecNM" class="plecaTECNM" style="width:20%;height:auto; min-width:80px" />
+							<img loading='lazy' src="./public/img/logos/tecnm.jpg" alt="TecNM" class="plecaTECNM" style="width:20%;height:auto; min-width:80px" />
 						</a>
 
 						<!--			<a href="/"  id="pleca_3">
@@ -309,13 +309,13 @@
 
 						<img loading='lazy' src="../img/logos/itcg2.png" alt="ITCostaGrande" class="plecaTECNM" style="width:20%;height:auto; min-width:80px" />
 					</a>
-					<img loading='lazy' style="height:8%;width:7%" src="../img/encabezado/microsoft_teams.png" alt="MT">
+					<img loading='lazy' style="height:8%;width:7%" src="./public/img/encabezado/microsoft_teams.png" alt="MT">
 					</a>
 					<a href="https://login.microsoftonline.com/?whr=tecnm.mx" title="Correo Institucional" target="_blank">
-						<img loading='lazy' style="height:8%;width:7%" src="../img/encabezado/correo-icono.png" alt="Buzón">
+						<img loading='lazy' style="height:8%;width:7%" src="./public/img/encabezado/correo-icono.png" alt="Buzón">
 					</a>
 					<a href="calendarios/CalendarioAcademicoTecNM2019-2020.pdf" title="Calendario Académico" target="_blank">
-						<img loading='lazy' style="height:6%;width:7%" src="../img/encabezado/calendario-icono.png" alt="Calendario Académico">
+						<img loading='lazy' style="height:6%;width:7%" src="./public/img/encabezado/calendario-icono.png" alt="Calendario Académico">
 					</a>
 
 					<!-- Traductor -->
@@ -469,7 +469,7 @@
 					</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="dropdown-item" href="../archivos/organigrama.pdf">
+					<a class="dropdown-item" href="./public/archivos/organigrama.pdf">
 						Organigrama institucional
 					</a>
 				</li>
@@ -539,10 +539,10 @@
 						<a class="dropdown-item" href="/estudiantes/buzon"> Buzon de observ. y sug. </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/Normatividad/Manual_de_Lineamientos_TecNM.pdf" target="_blank"> Manual de lineamientos </a>
+						<a class="dropdown-item" href="./public/archivos/Normatividad/Manual_de_Lineamientos_TecNM.pdf" target="_blank"> Manual de lineamientos </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/Normatividad/reglamento_alumnos.pdf" target="_blank"> Reglamento de alumnos </a>
+						<a class="dropdown-item" href="./public/archivos/Normatividad/reglamento_alumnos.pdf" target="_blank"> Reglamento de alumnos </a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/estudiantes/biblioteca_digital"> Biblioteca digital </a>
@@ -582,10 +582,10 @@
 						<a class="dropdown-item" href="/aspirantes/fichas"> Fichas </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/Lista_aspirtantes_ACEPTADOS.pdf" target="_blank"> Lista de aceptados </a>
+						<a class="dropdown-item" href="./public/archivos/Lista_aspirtantes_ACEPTADOS.pdf" target="_blank"> Lista de aceptados </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="dropdown-item" href="../archivos/escolares/requisitosdeinscripcion.pdf" target="_blank"> Inscripciones </a>
+						<a class="dropdown-item" href="./public/archivos/escolares/requisitosdeinscripcion.pdf" target="_blank"> Inscripciones </a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropdown-item" href="/aspirantes/formatos"> Formatos </a>
@@ -740,14 +740,14 @@
 	</div>
 
 	<!-- Opciones de Accesibilidad -->
-	<script src='../assets/files/main/js/index.onload.js'></script>
+	<script src='./public/assets/files/main/js/index.onload.js'></script>
 
 	<!-- Twitter -->
 	<script id='twitter-wjs' src='https://platform.twitter.com/widgets.js'></script>
 
 	<!-- Banner -->
-	<script src='../assets/web/assets/jquery/jquery.min.js'></script>
-	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src='./public/assets/web/assets/jquery/jquery.min.js'></script>
+	<script src="./public/assets/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- Configuración de los carrucel -->
 	<script>
@@ -821,7 +821,7 @@
 		});
 	</script>
 
-	<script src="../js/noticarrusel/slick.js"></script>
+	<script src="./public/js/noticarrusel/slick.js"></script>
 
 	<!-- Footer Gobernación -->
 	<div id='desface_footer_gob' style='display: none;'>
@@ -917,7 +917,7 @@
 
 		</footer>
 	</div>
-<img src="../img/botoncontacto/contacto.png" onmouseover="this.src='../img/botoncontacto/contacto2.png';" onmouseout="this.src='../img/botoncontacto/contacto.png';" id="Bcontacto"  title="Contactar al Campus ITCostaGrande" onclick="mostrar()" />
+<img src="./public/img/botoncontacto/contacto.png" onmouseover="this.src='../img/botoncontacto/contacto2.png';" onmouseout="this.src='../img/botoncontacto/contacto.png';" id="Bcontacto"  title="Contactar al Campus ITCostaGrande" onclick="mostrar()" />
 <!--Div que contiene a todo el formulario--> 
 
 <div id="formulario">   
@@ -969,7 +969,7 @@
 			});
 		})
 	</script>
-	<script src="../js/funciones.js"></script>
+	<script src="./public/js/funciones.js"></script>
 </body>
 
 </html>
