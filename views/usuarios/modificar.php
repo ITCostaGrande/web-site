@@ -16,7 +16,7 @@
             </tr>
             <tr valign="baseline">
                 <td nowrap align="right">Nombre:</td>
-                <td><input type="text" name="Nombre" value="<?php echo $row_Recordset1['Nombre']; ?>" size="32"></td>
+                <td><input type="text" name="nombre" value="<?php echo $row_Recordset1['nombre']; ?>" size="32"></td>
             </tr>
             <tr valign="baseline">
                 <td nowrap align="right">Apaterno:</td>

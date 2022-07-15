@@ -4,7 +4,7 @@
     <hr class="divisor">
     <br>
     <h3>Bienvenido <?php
-                    echo $row['Nombre'] . " " . $row['apaterno'] . " " . $row['amaterno'];
+                    echo $row['nombre'] . " " . $row['apaterno'] . " " . $row['amaterno'];
                     ?>
     </h3>
     <table width="864" border="0" cellspacing="0" cellpadding="0">

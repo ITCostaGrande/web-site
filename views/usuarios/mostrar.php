@@ -21,7 +21,7 @@
         <?php while ($prop = $propiedades->fetch_assoc()) { ?>
             <tr class="brillo">
                 <td><?php echo $prop['login']; ?></td>
-                <td><?php echo $prop['Nombre']; ?> <?php echo $prop['apaterno']; ?> <?php echo $prop['amaterno']; ?></td>
+                <td><?php echo $prop['nombre']; ?> <?php echo $prop['apaterno']; ?> <?php echo $prop['amaterno']; ?></td>
                 <td><?php echo $prop['password']; ?></td>
                 <td><?php echo $prop['email']; ?></td>
                 <td><?php echo $prop['nivel']; ?></td>

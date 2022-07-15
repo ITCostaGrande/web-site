@@ -74,7 +74,7 @@ class Usuarios{
     public function login(){
         try{
             $conn = conectar();
-            $stmt= $conn->prepare('SELECT IdUsuario from tbusuarios where login = ? and password = ?');
+            $stmt= $conn->prepare('SELECT IdUsuario from ffinal where login = ? and password = ?');
             $stmt->bind_param('ss',$this->login,$this->pass);
             $stmt->execute();
             $res = $stmt->get_result();
@@ -99,7 +99,7 @@ class Usuarios{
     public function showPropiertesAllUsers(){
         try{
             $conn = conectar();
-            $stmt =  $conn->prepare("SELECT * FROM tbusuarios;");
+            $stmt =  $conn->prepare("SELECT * FROM ffinal;");
             $stmt->execute();
             $resultado = $stmt->get_result();
             if($resultado){
@@ -116,7 +116,7 @@ class Usuarios{
     public function showPropiertesUser(){
         try{
             $conn = conectar();
-            $stmt =  $conn->prepare("SELECT * FROM tbusuarios where IdUsuario = ?;");
+            $stmt =  $conn->prepare("SELECT * FROM ffinal where IdUsuario = ?;");
             $stmt->bind_param('i',$this->id);
             $stmt->execute();
             $resultado = $stmt->get_result();
@@ -135,7 +135,7 @@ class Usuarios{
     public function createUser(){
         try{
             $conn = conectar();
-            $stmt = $conn->prepare('INSERT INTO tbusuarios (login, nombre, apaterno, amaterno, password, email, nivel) VALUES (?,?,?,?,?,?,?)');
+            $stmt = $conn->prepare('INSERT INTO ffinal (login, nombre, apaterno, amaterno, password, email, nivel) VALUES (?,?,?,?,?,?,?)');
             $stmt->bind_param('sssssss',$this->login,$this->nombre, $this->paterno, $this->materno, $this->pass,$this->email,$this->nivel);
             $stmt->execute();
             if($stmt->affected_rows > 0 ){
@@ -154,7 +154,7 @@ class Usuarios{
     public function updateUser(){
         try{
             $conn = conectar();
-            $stmt = $conn->prepare('UPDATE tbusuarios set login = ?, nombre = ?, apaterno = ?, amaterno = ?, password = ?, email = ?, nivel = ? WHERE IdUsuario = ?');
+            $stmt = $conn->prepare('UPDATE ffinal set login = ?, nombre = ?, apaterno = ?, amaterno = ?, password = ?, email = ?, nivel = ? WHERE IdUsuario = ?');
             $stmt->bind_param('sssssssi',$this->login,$this->nombre, $this->paterno, $this->materno, $this->pass,$this->email,$this->nivel,$this->id);
             $stmt->execute();
             if($stmt->affected_rows > 0 ){
@@ -173,7 +173,7 @@ class Usuarios{
     public function deleteUser(){
         try{
             $conn = conectar();
-            $stmt = $conn->prepare('DELETE FROM tbusuarios WHERE IdUsuario = ?');
+            $stmt = $conn->prepare('DELETE FROM ffinal WHERE IdUsuario = ?');
             $stmt->bind_param('i',$this->id);
             $stmt->execute();
             if($stmt->affected_rows > 0){

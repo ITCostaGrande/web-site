@@ -85,7 +85,7 @@ class UsuariosController
 
         if($_SERVER['REQUEST_METHOD'] === 'POST')  {
             $user->setLogin($_POST['login']);
-            $user->setNombre($_POST['Nombre']);
+            $user->setNombre($_POST['nombre']);
             $user->setPaterno($_POST['apaterno']);
             $user->setMaterno($_POST['amaterno']);
             $user->setPass($_POST['password']);

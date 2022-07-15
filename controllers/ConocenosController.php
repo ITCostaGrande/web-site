@@ -7,14 +7,21 @@ class ConocenosController{
 
     public static function index(Router $router){
 
-        //$boletin = new Model\Boletines();
-        //$bol = $boletin->showExist();
+        $boletin = new Model\Boletines();
+        $bol = $boletin->showExist();
 
-        //$slider = new Model\Sliders();
-        //$slid = $slider->showExist();
+        $slider = new Model\Sliders();
+        $slid = $slider->showExist();
 
 
-    $router->render('/nosotros/principal'/*['boletines' =>$bol, 'sliders' => $slid]*/);
+    $router->render('/nosotros/principal',['boletines' =>$bol, 'sliders' => $slid]);
+    }
+
+    public static function mensaje(Router $router){
+        $router->render('/nosotros/mensaje');
+    }
+    public static function mision(Router $router){
+        $router->render('/nosotros/mision');
     }
 
     public static function vision(Router $router){
